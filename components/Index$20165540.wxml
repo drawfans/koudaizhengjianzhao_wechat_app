@@ -1,0 +1,43 @@
+<template name="Index$20165540">
+    <view class="_div order {{h[0].rcl}} {{p}}">
+        <template is="paper-upgrade$cdcf5afa" data="{{...$root[ cp+0+(_t||'') ],$root:$root,_t:_t||'',p:p||''}}" wx:if="{{h[1]._if}}"></template>
+        <image bindtap="_pe" class="_image {{p}}" data-cid="{{_c||c}}" data-hid="{{4}}" src="{{h[4].src}}" style="position:fixed; width:45px; height:45px; bottom:90px; z-index:9999; right:15px" width="mode"></image>
+        <block wx:if="{{h[6]._if}}">
+            <template is="pull-down-refresh$5ecd62e0" data="{{...$root[ cp+1+(_t||'') ],$root:$root,s_default:'default_24',_t:_t||'',p:p||''}}" wx:if="{{h[7]._if}}"></template>
+            <view class="_div list {{p}}" wx:else>
+                <view class="_div noData {{p}}">
+                    <image class="_image {{p}}" src="../../../static/images/no-order.png"></image>
+                    <view class="_p {{p}}">您暂时没有订单<view class="_br {{p}}"></view>赶紧去下单吧~</view>
+                </view>
+            </view>
+        </block>
+        <template is="index$6e50f885" data="{{...$root[ cp+3+(_t||'') ],$root:$root,_t:_t||'',p:p||''}}"></template>
+        <template is="index$5962418e" data="{{...$root[ cp+4+(_t||'') ],$root:$root,_t:_t||'',p:p||''}}"></template>
+        <template is="send-email$222dba6f" data="{{...$root[ cp+5+(_t||'') ],$root:$root,_t:_t||'',p:p||''}}" wx:if="{{h[27]._if}}"></template>
+        <template is="download-image-preview$c62ec3ae" data="{{...$root[ cp+6+(_t||'') ],$root:$root,_t:_t||'',p:p||''}}" wx:if="{{h[30]._if}}"></template>
+        <van-dialog bindclose="_pe" cancelButtonText="直接重拍" class="_van-dialog {{p}}" confirmButtonOpenType="contact" confirmButtonText="联系客服" data-cid="{{_c||c}}" data-hid="{{33}}" sessionFrom="{{h[33].sessionFrom}}" show="{{h[33].show}}" showCancelButton="true" title="{{h[33].title}}" useSlot="true">
+            <view class="_div {{p}}" style="width:88%; margin:auto">
+                <view class="_p {{p}}" style="line-height:1.2; font-size:15px">
+        您只需要根据以下提示进行一点调整就能拍出合格的照片啦：
+      </view>
+                <view class="_li {{p}}" style="line-height:1.5; margin:10px 0; position:relative" wx:for="{{h[38].li}}" wx:key="index">
+                    <label class="_span {{p}}" style="width:5px; height:5px; border-radius:50%; background:#000; position:absolute; top:10px"></label>
+                    <label class="_span {{p}}" style="margin-left:11px">{{h[ 42+'-'+(item_i2!==undefined?item_i2:index) ].t}}</label>
+                </view>
+                <view class="_p {{p}}" style="line-height:1.2; font-size:15px; margin:10px 0; color:#1989fa">
+        建议您联系客服，我们会给您更高效的指引，帮助您一次拍出合格的照片！
+      </view>
+            </view>
+        </van-dialog>
+        <van-dialog class="_van-dialog {{p}}" id="van-dialog"></van-dialog>
+        <van-dialog bindgetuserinfo="_pe" class="_van-dialog {{p}}" confirmButtonText="授权" data-cid="{{_c||c}}" data-hid="{{49}}" id="getUserInfoDialog"></van-dialog>
+    </view>
+</template>
+<import src="../components/slots.wxml"></import>
+<import src="../components/pull-down-refresh$5ecd62e0.wxml"></import>
+<import src="../components/order-item$7143c78a.wxml"></import>
+<import src="../components/send-email$222dba6f.wxml"></import>
+<import src="../components/download-image-preview$c62ec3ae.wxml"></import>
+<import src="../components/paper-upgrade$cdcf5afa.wxml"></import>
+<import src="../components/index$5962418e.wxml"></import>
+<import src="../components/index$6e50f885.wxml"></import>

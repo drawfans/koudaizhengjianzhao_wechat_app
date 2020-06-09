@@ -1,0 +1,13 @@
+<template name="right$43"></template>
+<template name="default$42"></template>
+<template name="list-item$cfbda308">
+    <view bindtap="_pe" class="_li p-list-item {{h[0].rcl}} {{p}} v-357a7841" data-cid="{{_c||c}}" data-hid="{{0}}">
+        <label class="_span {{p}} v-357a7841">
+            <template is="{{s_default||'default$42'}}" data="{{...$root[c],$root:$root,_t:_t||'',p:(p||'')+' v-357a7841',_c:c}}"></template>
+        </label>
+        <label class="_span {{p}} v-357a7841">
+            <template is="{{s_right||'right$43'}}" data="{{...$root[c],$root:$root,_t:_t||'',p:(p||'')+' v-357a7841',_c:c}}"></template>
+        </label>
+    </view>
+</template>
+<import src="../components/slots.wxml"></import>

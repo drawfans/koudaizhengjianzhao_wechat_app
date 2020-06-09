@@ -1,0 +1,25 @@
+<template name="use-coupon$4887176c">
+    <view class="_div c-use-coupon {{h[0].rcl}} {{p}}">
+        <van-tabs active="{{h[1].active}}" bindchange="_pe" class="_van-tabs {{p}}" color="#000" data-cid="{{_c||c}}" data-hid="{{1}}">
+            <van-tab class="_van-tab {{p}}" title="{{h[2].title}}" titleActiveColor="#000"></van-tab>
+            <van-tab class="_van-tab {{p}}" title="{{h[4].title}}" titleActiveColor="#000"></van-tab>
+        </van-tabs>
+        <view class="_div scroll-wrap {{p}}" hidden="{{h[6].vs}}">
+            <template is="coupon-list$3bead887" data="{{...$root[ cp+0+(_t||'') ],$root:$root,s_default:'default_14',_t:_t||'',p:p||''}}"></template>
+        </view>
+        <view class="_div scroll-wrap {{p}}" hidden="{{h[16].vs}}">
+            <template is="coupon-list$3bead887" data="{{...$root[ cp+3+(_t||'') ],$root:$root,s_default:'default_16',_t:_t||'',p:p||''}}"></template>
+        </view>
+        <view class="_div footer-wrap {{p}}" hidden="{{h[24].vs}}">
+            <view class="_div footer-text {{p}}">
+                <label bindtap="_pe" class="_span {{p}}" data-cid="{{_c||c}}" data-hid="{{26}}">卡券使用说明</label>
+                <image class="_image {{p}}" mode="widthFix" src="/static/images/coupon/ic_sysm.png"></image>
+            </view>
+            <van-button bindtap="_pe" class="_van-button {{p}}" data-cid="{{_c||c}}" data-hid="{{31}}" type="primary">确认 </van-button>
+        </view>
+    </view>
+</template>
+<import src="../components/slots.wxml"></import>
+<import src="../components/coupon-list$3bead887.wxml"></import>
+<import src="../components/coupon-unavailable-footer$12b7e9e1.wxml"></import>
+<import src="../components/coupon$9a23f778.wxml"></import>

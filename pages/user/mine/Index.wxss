@@ -1,0 +1,333 @@
+@import "../../../htmlparse/index.wxss";
+
+.par-tabbar {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100rpx;
+    z-index: 10;
+}
+
+.par-tabbar-item {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    background: #fff;
+}
+
+.par-tabbar-item .par-tabbar-content {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.par-tabbar-item .par-info {
+    position: absolute;
+    right: 0;
+    top: -16rpx;
+    color: #fff;
+    font-size: 24rpx;
+    font-weight: 500;
+    font-family: PingFang SC,Helvetica Neue,Arial,sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0 6rpx;
+    min-width: 32rpx;
+    line-height: 28rpx;
+    border: 2rpx solid #fff;
+    border-radius: 32rpx;
+    background-color: #608dff;
+    transform: translateX(50%);
+    transform-origin: 100%;
+    z-index: 1;
+}
+
+.par-tabbar-item .par-infos {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    font-size: 24rpx;
+    font-weight: 500;
+    font-family: PingFang SC,Helvetica Neue,Arial,sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0 6rpx;
+    min-width: 32rpx;
+    line-height: 28rpx;
+    border: 2rpx solid #fff;
+    border-radius: 32rpx;
+    background-color: #f53303;
+    transform: translateX(50%);
+    transform-origin: 100%;
+    white-space: nowrap;
+    right: -40rpx;
+    z-index: 1;
+}
+
+.tab-bar .par-info {
+    top: 0;
+    right: auto;
+    left: 50%;
+    transform: none;
+    white-space: nowrap;
+}
+
+.tab-bar ._image {
+    height: 42rpx;
+    width: 42rpx;
+}
+
+.tab-bar image {
+    height: 42rpx;
+    width: 42rpx;
+}
+
+.hide-button {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    font-size: inherit;
+    line-height: inherit;
+    overflow: inherit;
+    background: #fff;
+}
+
+.opacityPopup {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 999;
+    background: rgba(0,0,0,0.7);
+    top: 0;
+    left: 0;
+}
+
+.login-popup {
+    width: 550rpx;
+    height: 650rpx;
+    background: #fff;
+    border-radius: 12rpx;
+    margin: 150rpx auto 0;
+}
+
+.login-popup .not-login {
+    padding-top: 50rpx;
+    text-align: center;
+    font-size: 40rpx;
+    font-family: PingFangSC;
+    font-weight: 500;
+    color: #000;
+    line-height: 56rpx;
+}
+
+.login-popup .login-pic {
+    width: 336rpx;
+    height: 273rpx;
+    margin-left: 105rpx;
+    margin-top: 20rpx;
+}
+
+.login-popup .login-pic .pic {
+    margin-top: 30rpx;
+    height: 242rpx;
+    display: inline-block;
+    width: 100%;
+}
+
+.login-popup .login {
+    font-size: 28rpx;
+    text-align: center;
+    font-family: PingFangSC;
+    font-weight: 400;
+    color: #888;
+    line-height: 40rpx;
+}
+
+.login-popup .flex-button {
+    display: flex;
+    margin-top: 74rpx;
+    justify-content: center;
+}
+
+.p-mine {
+    background: #f8f8f8;
+    min-height: 100vh;
+    box-sizing: content-box;
+}
+
+.p-mine .null-button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: 132rpx;
+    height: 132rpx;
+    flex: 0 0 132rpx;
+    border-radius: 50%;
+}
+
+.p-mine .null-button::after {
+    content: none;
+}
+
+.p-mine .user-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    height: 280rpx;
+    background: #fff;
+}
+
+.p-mine .user-info .avatar {
+    flex: 0 0 132rpx;
+    width: 132rpx;
+    height: 132rpx;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.p-mine .user-info .username {
+    margin-top: 30rpx;
+    font-size: 32rpx;
+    color: #222;
+}
+
+.p-mine .user-info .mobile {
+    font-size: 24rpx;
+    color: #999;
+}
+
+.p-mine .menu-list {
+    background: #fff;
+    font-size: 28rpx;
+}
+
+.p-mine .menu-list ._button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25.6rpx;
+    height: 112rpx;
+    position: relative;
+    box-sizing: border-box;
+    background: #fff;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.p-mine .menu-list button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25.6rpx;
+    height: 112rpx;
+    position: relative;
+    box-sizing: border-box;
+    background: #fff;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.p-mine .menu-list ._button:first-child {
+    border-top: 2rpx solid #eee;
+}
+
+.p-mine .menu-list button:first-child {
+    border-top: 2rpx solid #eee;
+}
+
+.p-mine .menu-list ._button ._div {
+    display: flex;
+    align-items: center;
+}
+
+.p-mine .menu-list button div {
+    display: flex;
+    align-items: center;
+}
+
+.p-mine .menu-list ._button ._div ._image {
+    width: 36rpx;
+    height: 36rpx;
+    margin-right: 40rpx;
+}
+
+.p-mine .menu-list button div image {
+    width: 36rpx;
+    height: 36rpx;
+    margin-right: 40rpx;
+}
+
+.p-mine .menu-list ._button .arrow {
+    width: 16rpx;
+    height: 24rpx;
+}
+
+.p-mine .menu-list button .arrow {
+    width: 16rpx;
+    height: 24rpx;
+}
+
+.p-mine .menu-list ._button:not(:last-child):after {
+    content: " ";
+    position: absolute;
+    pointer-events: none;
+    left: 25.6rpx;
+    right: 0;
+    bottom: 0;
+    transform: scaleY(0.5);
+    border-bottom: 2rpx solid #ebedf0;
+}
+
+.p-mine .menu-list button:not(:last-child):after {
+    content: " ";
+    position: absolute;
+    pointer-events: none;
+    left: 25.6rpx;
+    right: 0;
+    bottom: 0;
+    transform: scaleY(0.5);
+    border-bottom: 2rpx solid #ebedf0;
+}
+
+.p-mine .copyright {
+    width: 100%;
+    height: 240rpx;
+    text-align: center;
+    margin-top: 60rpx;
+}
+
+.p-mine .copyright ._h3 {
+    font-size: 24rpx;
+    color: #666;
+}
+
+.p-mine .copyright h3 {
+    font-size: 24rpx;
+    color: #666;
+}
+
+.p-mine .copyright ._span {
+    font-size: 22rpx;
+    color: #ccc;
+}
+
+.p-mine .copyright span {
+    font-size: 22rpx;
+    color: #ccc;
+}
+
+.chickPhoto {
+    width: 132rpx;
+    height: 132rpx;
+    border-radius: 50%;
+    overflow: hidden;
+}

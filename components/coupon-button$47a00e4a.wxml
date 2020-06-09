@@ -1,0 +1,4 @@
+<template name="coupon-button$47a00e4a">
+    <button bindtap="_pe" class="_button coupon-button {{h[0].rcl}} {{p}}" data-cid="{{_c||c}}" data-hid="{{0}}" wx:if="{{h[0]._if}}">{{h[1].t}}</button>
+</template>
+<import src="../components/slots.wxml"></import>

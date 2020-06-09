@@ -1,0 +1,41 @@
+<template name="Index$21a19adf">
+    <view class="_div {{h[0].cl}} {{h[0].rcl}} {{p}}">
+        <view class="_div p-driver-form {{p}}">
+            <view class="_div driver-form-tips {{p}}">
+                <image class="_image driver-image {{p}}" src="https://c01.parameters.cn/image/tips_1.jpg" wx:if="{{h[3]._if}}"></image>
+                <image class="_image driver-image {{p}}" src="http://c01.parameters.cn/image/201811291407219254" wx:else></image>
+                <view class="_var {{p}}">采集相片回执，必须<label class="_span {{p}}">如实登记</label>申请人的信息，如有填写虚假信息会导致不能办证</view>
+            </view>
+            <view class="_ul driver-form-content {{p}}">
+                <view class="_li {{p}}">
+                    <label class="_span {{p}}">所在地区</label>
+                    <input bindinput="_pe" class="_input {{p}}" data-cid="{{_c||c}}" data-hid="{{17}}" disabled="true" placeholder="请选择地区" type="text" value="{{h[17].value}}"></input>
+                </view>
+                <view class="_li {{p}}">
+                    <label class="_span {{p}}">申请人姓名</label>
+                    <input bindinput="_pe" class="_input {{p}}" data-cid="{{_c||c}}" data-hid="{{23}}" placeholder="请输入申请人姓名" type="text" value="{{h[23].value}}"></input>
+                </view>
+                <view bindtap="_pe" class="_li {{p}}" data-cid="{{_c||c}}" data-hid="{{25}}">
+                    <label class="_span {{p}}">证件类型</label>
+                    <input bindinput="_pe" class="_input {{p}}" data-cid="{{_c||c}}" data-hid="{{29}}" disabled="true" placeholder="请选择证件类型" type="text" value="{{h[29].value}}"></input>
+                    <image class="_image {{p}}" mode="widthFix" src="../../../static/images/go_black.png"></image>
+                </view>
+                <view class="_li {{p}}">
+                    <label class="_span {{p}}">证件号码</label>
+                    <input bindinput="_pe" class="_input {{p}}" data-cid="{{_c||c}}" data-hid="{{37}}" placeholder="请输入证件号码" type="{{h[37].type}}" value="{{h[37].value}}"></input>
+                </view>
+            </view>
+            <van-popup bindclose="_pe" class="_van-popup {{p}}" data-cid="{{_c||c}}" data-hid="{{39}}" position="bottom" show="{{h[39].show}}">
+                <van-picker bindcancel="_pe" bindconfirm="_pe" class="_van-picker {{p}}" columns="{{h[40].columns}}" data-cid="{{_c||c}}" data-hid="{{40}}" showToolbar="true" title="证件类型"></van-picker>
+            </van-popup>
+            <form bindsubmit="_pe" class="_form {{p}}" data-cid="{{_c||c}}" data-hid="{{42}}" reportSubmit="true" style="width:100%">
+                <button class="_button van-button van-button--primary {{p}}" disabled="{{h[43].disabled}}" formType="submit" style="{{h[43].st}}" type="primary">
+        下一步
+      </button>
+            </form>
+            <template is="index$6e50f885" data="{{...$root[ cp+0+(_t||'') ],$root:$root,_t:_t||'',p:p||''}}"></template>
+        </view>
+    </view>
+</template>
+<import src="../components/slots.wxml"></import>
+<import src="../components/index$6e50f885.wxml"></import>

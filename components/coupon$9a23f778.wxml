@@ -1,0 +1,29 @@
+<template name="footer$34"></template>
+<template name="bodySelect$33"></template>
+<template name="coupon$9a23f778">
+    <view bindtap="_pe" class="_div c-coupon {{h[0].cl}} {{h[0].rcl}} {{p}}" data-cid="{{_c||c}}" data-hid="{{0}}">
+        <view class="_div c-coupon-body {{p}}">
+            <view class="_div c-coupon-stamp {{p}}" style="{{h[2].st}}" wx:if="{{h[2]._if}}"></view>
+            <view class="_div c-coupon-var-wrap {{p}}">
+                <view class="_div c-coupon-var-inner {{h[5].cl}} {{p}}">
+                    <label class="_span unit {{p}}">{{h[7].t}}</label>
+                    <view class="_var {{p}}">{{h[10].t}}</view>
+                </view>
+                <view class="_div c-coupon-var-tips {{p}}">{{h[13].t}}</view>
+            </view>
+            <view class="_div c-coupon-body-right {{p}}">
+                <view class="_div c-coupon-info-wrap {{p}}">
+                    <label class="_span c-coupon-info-type {{p}}">{{h[18].t}}</label>
+                    <view class="_b c-coupon-info-name {{p}}">{{h[21].t}}</view>
+                    <label class="_span c-coupon-info-desc {{p}}">{{h[24].t}}</label>
+                </view>
+                <template is="{{s_bodySelect||'bodySelect$33'}}" data="{{...$root[c],$root:$root,_t:_t||'',p:p||'',_c:c}}"></template>
+            </view>
+        </view>
+        <view class="_div c-coupon-footer {{p}}" wx:if="{{h[28]._if}}">
+            <template is="{{s_footer||'footer$34'}}" data="{{...$root[c],$root:$root,_t:_t||'',p:p||'',_c:c}}"></template>
+        </view>
+    </view>
+</template>
+<import src="../components/slots.wxml"></import>
+<import src="../components/coupon-button$47a00e4a.wxml"></import>

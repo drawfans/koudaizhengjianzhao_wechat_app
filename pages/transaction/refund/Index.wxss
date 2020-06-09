@@ -1,0 +1,234 @@
+@import "../../../htmlparse/index.wxss";
+
+.p-refund {
+    display: flex;
+    flex-flow: column;
+    box-sizing: border-box;
+    height: 100vh;
+    background: #f7f7f7;
+}
+
+.p-refund ._main {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.p-refund main {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.p-refund ._section {
+    background: #fff;
+}
+
+.p-refund section {
+    background: #fff;
+}
+
+.p-refund ._section:not(:first-child) {
+    margin-top: 20rpx;
+}
+
+.p-refund section:not(:first-child) {
+    margin-top: 20rpx;
+}
+
+.p-refund .title {
+    font-size: 28rpx;
+}
+
+.p-refund .photo-info-wrap {
+    padding: 30rpx;
+}
+
+.p-refund .photo-info-wrap ._h1,.p-refund .photo-info-wrap ._h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 28rpx;
+    font-weight: 500;
+}
+
+.p-refund .photo-info-wrap h1,.p-refund .photo-info-wrap h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 28rpx;
+    font-weight: 500;
+}
+
+.p-refund .photo-info-wrap .photo-info {
+    margin-top: 20rpx;
+    display: flex;
+}
+
+.p-refund .photo-info-wrap .photo-info>.image-wrap {
+    flex: 0 0;
+}
+
+.p-refund .photo-info-wrap .photo-info-img {
+    height: 200rpx;
+}
+
+.p-refund .photo-info-wrap .photo-info-template {
+    width: 160rpx;
+}
+
+.p-refund .photo-info-wrap .photo-info-receipt {
+    width: 160rpx;
+    margin-top: 5rpx;
+}
+
+.p-refund .photo-info-wrap .photo-info-detail {
+    position: relative;
+    flex: 1;
+    margin-left: 30rpx;
+}
+
+.p-refund .photo-info-wrap ._var {
+    color: #666;
+}
+
+.p-refund .photo-info-wrap var {
+    color: #666;
+}
+
+.p-refund .photo-info-wrap .amount {
+    font-size: 24rpx;
+    margin-top: 20rpx;
+}
+
+.p-refund .photo-info-wrap .price {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 30rpx;
+}
+
+.p-refund .desc-wrap {
+    padding: 30rpx;
+}
+
+.p-refund .desc-wrap .van-cell {
+    padding: 0;
+    margin: 20rpx 0 0;
+}
+
+.p-refund .desc-wrap .van-cell::after {
+    content: none;
+}
+
+.p-refund .desc-wrap ._var {
+    margin-top: 20rpx;
+    display: block;
+    text-align: right;
+    font-size: 28rpx;
+    color: #666;
+}
+
+.p-refund .desc-wrap var {
+    margin-top: 20rpx;
+    display: block;
+    text-align: right;
+    font-size: 28rpx;
+    color: #666;
+}
+
+.p-refund .refund-reason-popup .title {
+    font-size: 32rpx;
+    color: #666;
+    margin: 50rpx 0;
+    padding: 0 30rpx;
+}
+
+.p-refund .refund-reason-popup .button-wrap {
+    padding: 20rpx 30rpx;
+}
+
+.refund-button-list {
+    display: flex;
+    justify-content: center;
+    padding: 30rpx;
+}
+
+.refund-button-list .van-button {
+    display: block;
+    flex: 1;
+    margin: 0 10rpx;
+}
+
+.refund-submit-success {
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
+}
+
+.refund-submit-success ._main {
+    flex: 1;
+    overflow-y: auto;
+    padding: 40rpx;
+}
+
+.refund-submit-success main {
+    flex: 1;
+    overflow-y: auto;
+    padding: 40rpx;
+}
+
+.refund-submit-success ._main .pic {
+    margin: 120rpx 0 0;
+}
+
+.refund-submit-success main .pic {
+    margin: 120rpx 0 0;
+}
+
+.refund-submit-success ._main .pic ._image {
+    width: 180rpx;
+    margin: 0 auto;
+    display: block;
+}
+
+.refund-submit-success main .pic image {
+    width: 180rpx;
+    margin: 0 auto;
+    display: block;
+}
+
+.refund-submit-success ._main .title {
+    margin: 40rpx 0 0;
+    font-weight: 500;
+    font-size: 36rpx;
+    color: #4293f4;
+    text-align: center;
+}
+
+.refund-submit-success main .title {
+    margin: 40rpx 0 0;
+    font-weight: 500;
+    font-size: 36rpx;
+    color: #4293f4;
+    text-align: center;
+}
+
+.refund-submit-success ._main .sub-title {
+    margin: 30rpx 0 0;
+    font-size: 28rpx;
+    color: #666;
+    text-align: center;
+}
+
+.refund-submit-success main .sub-title {
+    margin: 30rpx 0 0;
+    font-size: 28rpx;
+    color: #666;
+    text-align: center;
+}
+
+.refund-submit-success ._footer {
+    flex: 0 0;
+}
+
+.refund-submit-success footer {
+    flex: 0 0;
+}

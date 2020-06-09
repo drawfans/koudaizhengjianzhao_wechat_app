@@ -1,0 +1,23 @@
+<van-popup bind:close="onClickOverlay" closeOnClickOverlay="{{closeOnClickOverlay}}" customClass="van-action-sheet" overlay="{{overlay}}" position="bottom" round="{{round}}" safeAreaInsetBottom="{{safeAreaInsetBottom}}" show="{{show}}" zIndex="{{zIndex}}">
+    <view class="van-hairline--bottom van-action-sheet__header" wx:if="{{title}}">
+    {{title}}
+    <van-icon bind:click="onClose" customClass="van-action-sheet__close" name="close"></van-icon>
+    </view>
+    <view class="van-action-sheet__description" wx:if="{{description}}">
+    {{description}}
+  </view>
+    <view wx:if="{{actions&&actions.length}}">
+        <button appParameter="{{appParameter}}" bind:tap="onSelect" bindcontact="bindContact" binderror="bindError" bindgetphonenumber="bindGetPhoneNumber" bindgetuserinfo="bindGetUserInfo" bindlaunchapp="bindLaunchApp" bindopensetting="bindOpenSetting" class="{{utils.bem( 'action-sheet__item',{disabled:item.disabled||item.loading} )}} van-hairline--top {{item.className||''}}" data-index="{{index}}" hoverClass="van-action-sheet__item--hover" lang="{{lang}}" openType="{{item.openType}}" sendMessageImg="{{sendMessageImg}}" sendMessagePath="{{sendMessagePath}}" sendMessageTitle="{{sendMessageTitle}}" sessionFrom="{{sessionFrom}}" showMessageCard="{{showMessageCard}}" style="{{item.color?'color: '+item.color:''}}" wx:for="{{actions}}" wx:key="index">
+            <block wx:if="{{!item.loading}}">
+        {{item.name}}
+        <text class="van-action-sheet__subname" wx:if="{{item.subname}}">{{item.subname}}</text>
+            </block>
+            <van-loading customClass="van-action-sheet__loading" size="20px" wx:else></van-loading>
+        </button>
+    </view>
+    <slot></slot>
+    <view bind:tap="onCancel" class="van-action-sheet__cancel" hoverClass="van-action-sheet__cancel--hover" hoverStayTime="70" wx:if="{{cancelText}}">
+    {{cancelText}}
+  </view>
+</van-popup>
+<wxs module="utils" src="../wxs/utils.wxs" />

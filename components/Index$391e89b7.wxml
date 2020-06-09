@@ -1,0 +1,46 @@
+<template name="Index$391e89b7">
+    <view class="_div {{h[0].cl}} {{h[0].rcl}} {{p}}">
+        <view class="_div pay-result {{p}}">
+            <block wx:if="{{h[2]._if}}">
+                <view class="_div order-detail-status {{p}}">
+                    <view class="_div order-detail-status-title {{p}}">
+                        <image class="_image order-detail-status-title-icon {{p}}" mode="widthFix" src="../../../static/icon/orderDetail/ic_yzf.png"></image>
+                        <label class="_span {{p}}">支付成功</label>
+                    </view>
+                    <view class="_div order-detail-status-text {{p}}">{{h[11].t}}</view>
+                    <view class="_div order-detail-status-buttons {{p}}">
+                        <van-button bindtap="_pe" class="_van-button {{p}}" data-cid="{{_c||c}}" data-hid="{{14}}" type="primary">返回首页</van-button>
+                        <van-button bindtap="_pe" class="_van-button {{p}}" data-cid="{{_c||c}}" data-hid="{{17}}" type="primary">查看订单</van-button>
+                    </view>
+                </view>
+                <view class="_div get-coupon-wrap {{p}}" wx:if="{{h[20]._if}}">
+                    <view class="_div {{p}}">恭喜您本次支付获得优惠</view>
+                    <view class="_div get-coupon-container {{p}}">
+                        <template is="coupon-list$3bead887" data="{{...$root[ cp+0+(_t||'') ],$root:$root,s_default:'default_21',_t:_t||'',p:p||''}}"></template>
+                    </view>
+                </view>
+            </block>
+            <view class="_div loading-mode {{p}}" wx:else>
+                <image class="_image {{p}}" mode="widthFix" src="../../../static/images/payResult/ic_fresh.png"></image>
+                <label class="_span {{p}}">等待支付结果</label>
+            </view>
+        </view>
+        <van-popup class="_van-popup {{p}}" customStyle="border-radius: 0 0 12rpx 12rpx;background:transparent" show="{{h[38].show}}">
+            <image class="_image {{p}}" mode="widthFix" src="http://c01.parameters.cn/image/photoAppStatic/lfOUN4t9YQTZxX8b6eHwPd1RJovjsIcA.png" style="width:550rpx; display:block"></image>
+            <view class="_view share-content-wrap {{p}}">
+                <text class="_text title {{p}}">拍得不错喔</text>
+                <view class="_view message {{p}}">分享给朋友，一起在线拍好看的证件照吧~</view>
+                <view class="_view button-wrap {{p}}">
+                    <van-button bindtap="_pe" class="_van-button {{p}}" customClass="button" data-cid="{{_c||c}}" data-hid="{{49}}" plain="true" type="primary">残忍拒绝</van-button>
+                    <van-button bindtap="_pe" class="_van-button {{p}}" customClass="button" data-cid="{{_c||c}}" data-hid="{{52}}" openType="share" type="primary">马上分享</van-button>
+                </view>
+            </view>
+        </van-popup>
+    </view>
+</template>
+<import src="../components/slots.wxml"></import>
+<import src="../components/config-dialog$101e25db.wxml"></import>
+<import src="../components/coupon-list$3bead887.wxml"></import>
+<import src="../components/coupon-button$47a00e4a.wxml"></import>
+<import src="../components/coupon$9a23f778.wxml"></import>
+<import src="../components/index$6e50f885.wxml"></import>

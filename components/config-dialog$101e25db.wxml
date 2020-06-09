@@ -1,0 +1,26 @@
+<template name="config-dialog$101e25db">
+    <van-popup bindclickOverlay="_pe" class="_van-popup config-dialog-popup {{h[0].rcl}} {{p}}" closeOnClickOverlay="{{h[0].closeOnClickOverlay}}" customStyle="{{h[0].customStyle}}" data-cid="{{_c||c}}" data-hid="{{0}}" show="{{h[0].show}}">
+        <image bindtap="_pe" class="_image close-icon {{p}}" data-cid="{{_c||c}}" data-hid="{{1}}" mode="widthFix" src="/static/icon/ic_close.png"></image>
+        <block wx:if="{{h[3]._if}}">
+            <view class="_div dialog-default {{p}}" wx:if="{{h[4]._if}}">
+                <view bindtap="_pe" class="_div dialog-title {{p}}" data-cid="{{_c||c}}" data-hid="{{6}}" wx:if="{{h[6]._if}}">{{h[7].t}}</view>
+                <view class="_div dialog-img-wrap {{p}}" wx:if="{{h[9]._if}}">
+                    <image bindtap="_pe" class="_image dialog-img {{p}}" data-cid="{{_c||c}}" data-hid="{{10}}" mode="widthFix" src="{{h[10].src}}"></image>
+                </view>
+                <view bindtap="_pe" class="_div dialog-content {{p}}" data-cid="{{_c||c}}" data-hid="{{12}}" wx:if="{{h[12]._if}}">{{h[13].t}}</view>
+                <view class="_div dialog-footer {{p}}">
+                    <view class="_view dialog-button {{p}}">
+                        <van-button bindtap="_pe" class="_van-button {{p}}" data-cid="{{_c||c}}" data-hid="{{17}}" plain="true" size="large" type="primary" wx:if="{{h[17]._if}}">{{h[18].t}}</van-button>
+                    </view>
+                    <view class="_view dialog-button {{p}}">
+                        <van-button bindtap="_pe" class="_van-button {{p}}" data-cid="{{_c||c}}" data-hid="{{21}}" size="large" type="primary" wx:if="{{h[21]._if}}">{{h[22].t}}</van-button>
+                    </view>
+                </view>
+            </view>
+            <view class="_div dialog-full {{p}}" wx:else>
+                <image bindtap="_pe" class="_image dialog-img {{p}}" data-cid="{{_c||c}}" data-hid="{{25}}" mode="widthFix" src="{{h[25].src}}" wx:if="{{h[25]._if}}"></image>
+            </view>
+        </block>
+    </van-popup>
+</template>
+<import src="../components/slots.wxml"></import>

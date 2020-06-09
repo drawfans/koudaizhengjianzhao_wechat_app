@@ -1,0 +1,293 @@
+@import "../../../../htmlparse/index.wxss";
+
+.p-tips {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 88rpx;
+    background: #FEF0CF;
+    font-size: 26rpx;
+    color: #FF8420;
+}
+
+.c-coupon-list {
+    padding: 30rpx;
+    background-color: #f7f7f7;
+}
+
+.c-coupon-list .c-coupon+.c-coupon {
+    margin-top: 20rpx;
+}
+
+.coupon-button {
+    font-size: 22rpx;
+    color: #fff;
+    background: #4293F4;
+    border-radius: 34rpx;
+    padding: 2rpx 12rpx;
+    line-height: 30rpx;
+    outline: none;
+    border: none;
+    align-self: flex-end;
+    display: flex;
+}
+
+.c-coupon-status-used .c-coupon-body .c-coupon-var-wrap .c-coupon-var-inner,.c-coupon-status-expired .c-coupon-body .c-coupon-var-wrap .c-coupon-var-inner {
+    color: #000;
+}
+
+.c-coupon .c-coupon-body {
+    position: relative;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 8rpx 16rpx 0 rgba(0,0,0,0.02);
+    overflow: hidden;
+    height: 210rpx;
+    border-radius: 4rpx;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.c-coupon .c-coupon-body .c-coupon-label {
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    top: -56rpx;
+    left: -56rpx;
+    transform: rotate(-45deg);
+    color: #fff;
+    background-color: #ff6c6c;
+    width: 112rpx;
+    height: 112rpx;
+    font-size: 18rpx;
+    padding-bottom: 6rpx;
+    box-sizing: border-box;
+}
+
+.c-coupon .c-coupon-body .c-coupon-label ._span {
+    position: relative;
+    z-index: 10;
+}
+
+.c-coupon .c-coupon-body .c-coupon-label span {
+    position: relative;
+    z-index: 10;
+}
+
+.c-coupon .c-coupon-body .c-coupon-stamp {
+    position: absolute;
+    top: -35rpx;
+    right: -24rpx;
+    width: 140rpx;
+    height: 140rpx;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transform: rotate(-35deg);
+}
+
+.c-coupon .c-coupon-body .c-coupon-var-wrap {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 60rpx;
+    color: #FF4A01;
+    text-align: center;
+    flex: 0 0 210rpx;
+    height: 100%;
+}
+
+.c-coupon .c-coupon-body .c-coupon-var-wrap .unit {
+    font-size: 30rpx;
+}
+
+.c-coupon .c-coupon-body .c-coupon-var-wrap::before {
+    position: absolute;
+    content: '';
+    height: 150rpx;
+    right: 0;
+    border-right: 2rpx dashed #d8d8d8;
+}
+
+.c-coupon .c-coupon-body .c-coupon-var-wrap .c-coupon-var-inner {
+    display: flex;
+    align-items: baseline;
+}
+
+.c-coupon .c-coupon-body .c-coupon-var-wrap .reversa {
+    flex-flow: row-reverse;
+}
+
+.c-coupon .c-coupon-body .c-coupon-var-wrap .c-coupon-var-tips {
+    position: relative;
+    top: 6rpx;
+    font-size: 24rpx;
+    color: #999;
+}
+
+.c-coupon .c-coupon-body .c-coupon-body-right {
+    position: relative;
+    flex: 1;
+    padding: 30rpx;
+    display: flex;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.c-coupon .c-coupon-body .c-coupon-body-right::before {
+    position: absolute;
+    content: '';
+    background: #f7f7f7;
+    border-radius: 50%;
+    width: 28rpx;
+    height: 28rpx;
+    left: -14rpx;
+    top: -14rpx;
+}
+
+.c-coupon .c-coupon-body .c-coupon-body-right::after {
+    position: absolute;
+    content: '';
+    background: #f7f7f7;
+    border-radius: 50%;
+    width: 28rpx;
+    height: 28rpx;
+    left: -14rpx;
+    bottom: -14rpx;
+}
+
+.c-coupon .c-coupon-body .c-coupon-body-right .c-coupon-info-wrap {
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+}
+
+.c-coupon .c-coupon-body .c-coupon-body-right .c-coupon-info-wrap .c-coupon-info-type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8rpx 20rpx;
+    background: rgba(90,90,90,0.08);
+    border-radius: 44rpx;
+    font-size: 20rpx;
+    font-weight: 600;
+    height: 44rpx;
+    box-sizing: border-box;
+}
+
+.c-coupon .c-coupon-body .c-coupon-body-right .c-coupon-info-wrap .c-coupon-info-name {
+    margin-top: 10rpx;
+    font-size: 36rpx;
+    line-height: 50rpx;
+    font-weight: 700;
+}
+
+.c-coupon .c-coupon-body .c-coupon-body-right .c-coupon-info-wrap .c-coupon-info-desc {
+    margin-top: 15rpx;
+    font-size: 22rpx;
+    color: #666;
+    line-height: 30rpx;
+}
+
+.c-coupon .c-coupon-body .c-coupon-body-right .c-coupon-select-wrap {
+    flex: 0 0;
+}
+
+.c-coupon .c-coupon-body .c-coupon-body-right .c-coupon-select-wrap ._img {
+    width: 38rpx;
+}
+
+.c-coupon .c-coupon-body .c-coupon-body-right .c-coupon-select-wrap img {
+    width: 38rpx;
+}
+
+.c-coupon .c-coupon-footer {
+    position: relative;
+    margin-top: -40rpx;
+    padding-top: 40rpx;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.coupon-unavailable-footer {
+    background-color: #fff;
+}
+
+.coupon-unavailable-footer .van-cell {
+    display: flex;
+    align-items: center;
+    padding: 0 20rpx;
+    height: 80rpx;
+}
+
+.coupon-unavailable-footer .van-cell .van-cell__title {
+    font-size: 24rpx;
+    color: #666;
+    font-weight: 600;
+}
+
+.coupon-unavailable-footer .van-cell.van-cell--clickable {
+    transition: background-color 300ms ease-in-out;
+}
+
+.coupon-unavailable-footer .van-cell .van-icon {
+    transition: transform 300ms ease-in-out;
+    transition: transform 300ms ease-in-out,-webkit-transform 300ms ease-in-out;
+}
+
+.coupon-unavailable-footer .van-cell.expand .van-icon {
+    transform: rotate(-180deg);
+}
+
+.coupon-unavailable-footer .fold {
+    padding: 0 20rpx 20rpx;
+    color: #666;
+    font-size: 24rpx;
+}
+
+.coupon-unavailable-footer ._ul {
+    list-style: decimal;
+    -webkit-padding-start: 40rpx;
+    padding-inline-start: 40rpx;
+}
+
+.coupon-unavailable-footer ul {
+    list-style: decimal;
+    -webkit-padding-start: 40rpx;
+    padding-inline-start: 40rpx;
+}
+
+.pull-down-refresh .infinite,.pull-down-refresh .infinite-finish {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+    font-size: 28rpx;
+    height: 100rpx;
+}
+
+.pull-down-refresh .infinite ._span,.pull-down-refresh .infinite-finish ._span {
+    margin: 0 40rpx;
+}
+
+.pull-down-refresh .infinite span,.pull-down-refresh .infinite-finish span {
+    margin: 0 40rpx;
+}
+
+.my-coupon {
+    height: 100vh;
+    overflow-y: auto;
+    background-color: #f7f7f7;
+}
+
+.my-coupon .c-coupon-list {
+    padding-bottom: 0;
+}
+
+.my-coupon .van-list__loading {
+    background-color: #f8f8f8;
+}

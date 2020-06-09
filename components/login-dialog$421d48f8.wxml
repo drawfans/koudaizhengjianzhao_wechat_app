@@ -1,0 +1,23 @@
+<template name="login-dialog$421d48f8">
+    <view class="_div p-base-login {{h[0].rcl}} {{p}}">
+        <view class="_div p-base-login-mask {{p}}"></view>
+        <view class="_div p-base-login-wrap {{p}}">
+            <view bindtap="_pe" class="_div p-base-login-close {{p}}" data-cid="{{_c||c}}" data-hid="{{4}}">
+                <image class="_image {{p}}" src="/static/images/btn_close.png"></image>
+            </view>
+            <view class="_div p-base-login-logo {{p}}">
+            登录
+        </view>
+            <van-field bindinput="_pe" class="_van-field p-base-login-input {{p}}" data-cid="{{_c||c}}" data-hid="{{10}}" maxlength="11" placeholder="请输入手机号" type="number" value="{{h[10].value}}"></van-field>
+            <van-field bindinput="_pe" class="_van-field p-base-login-input {{p}}" data-cid="{{_c||c}}" data-hid="{{12}}" maxlength="4" placeholder="请输入验证码" type="number" useButtonSlot="true" value="{{h[12].value}}">
+                <van-button bindtap="_pe" class="_van-button {{p}}" data-cid="{{_c||c}}" data-hid="{{13}}" disabled="{{h[13].disabled}}" plain="true" size="small" slot="button" type="primary">{{h[14].t}}</van-button>
+            </van-field>
+            <view class="_div p-base-login-submit {{p}}">
+                <van-button bindtap="_pe" class="_van-button {{p}}" data-cid="{{_c||c}}" data-hid="{{17}}" size="large" type="primary">{{h[18].t}}</van-button>
+            </view>
+        </view>
+        <template is="index$6e50f885" data="{{...$root[ cp+0+(_t||'') ],$root:$root,_t:_t||'',p:p||''}}"></template>
+    </view>
+</template>
+<import src="../components/slots.wxml"></import>
+<import src="../components/index$6e50f885.wxml"></import>

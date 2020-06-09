@@ -1,0 +1,16 @@
+<template name="Index$f41a2e90">
+    <camera binderror="_pe" class="_camera {{h[0].rcl}} {{p}}" data-cid="{{_c||c}}" data-hid="{{0}}" devicePosition="{{h[0].devicePosition}}" flash="off">
+        <cover-image class="_cover-image cover-image {{p}}" mode="widthFix" src="{{h[1].src}}"></cover-image>
+        <cover-view class="_cover-view tips fail {{p}}" wx:if="{{h[3]._if}}">{{h[4].t}}</cover-view>
+        <cover-view class="_cover-view menu {{p}}">
+            <cover-view bindtap="_pe" class="_cover-view cancel-button {{p}}" data-cid="{{_c||c}}" data-hid="{{7}}">取消</cover-view>
+            <cover-view bindtap="_pe" class="_cover-view button-wrap {{p}}" data-cid="{{_c||c}}" data-hid="{{10}}">
+                <cover-view class="_cover-view button {{p}}"></cover-view>
+            </cover-view>
+            <cover-view bindtap="_pe" class="_cover-view switch-camera {{p}}" data-cid="{{_c||c}}" data-hid="{{13}}">翻转相机</cover-view>
+        </cover-view>
+        <canvas canvasId="canvas" class="_canvas {{p}}" style="position:fixed; left:100vw; {{h[16].st}}"></canvas>
+    </camera>
+</template>
+<import src="../components/slots.wxml"></import>
+<import src="../components/index$6e50f885.wxml"></import>

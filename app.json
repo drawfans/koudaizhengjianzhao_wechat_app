@@ -1,0 +1,87 @@
+{
+    "pages": [
+        "pages/home/Home",
+        "pages/main/customPhotoSize/Index",
+        "pages/transaction/payResult/Index",
+        "pages/transaction/submitOrder/Index",
+        "pages/user/coupon/explain/Index",
+        "pages/user/coupon/Index",
+        "pages/user/coupon/cantUseCoupon/Index",
+        "pages/user/exchangeCoupon/Index",
+        "pages/transaction/orderDetail/Index",
+        "pages/transaction/refund/Index",
+        "pages/transaction/refundDetail/Index",
+        "pages/transaction/printPhoto/Index",
+        "pages/more/Index",
+        "pages/main/camera/Index",
+        "pages/photoRecord/Index",
+        "pages/transaction/order/Index",
+        "pages/address/Index",
+        "pages/user/mine/Index",
+        "pages/user/customerService/Index",
+        "pages/user/guide/Index",
+        "pages/main/photoGuide/Index",
+        "pages/main/driverForm/Index"
+    ],
+    "window": {
+        "enablePullDownRefresh": false,
+        "onReachBottomDistance": 100,
+        "backgroundColor": "#f8f8f8",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "加载中",
+        "navigationBarTextStyle": "black"
+    },
+    "subPackages": [
+        {
+            "root": "packageA/",
+            "pages": [
+                "packageA/pages/chooseCity/Index",
+                "packageA/pages/webview/Index"
+            ]
+        },
+        {
+            "root": "packageB/",
+            "pages": [
+                "packageB/pages/check/preview/Index",
+                "packageB/pages/check/checkIng/Index",
+                "packageB/pages/check/checkOk/Index",
+                "packageB/pages/check/checkFail/Index",
+                "packageB/pages/living2Identify/Index",
+                "packageB/pages/check/checkAbnormal/Index"
+            ]
+        }
+    ],
+    "subPackages": [
+        {
+            "root": "packageA/",
+            "pages": [
+                "pages/chooseCity/Index",
+                "pages/webview/Index"
+            ]
+        },
+        {
+            "root": "packageB/",
+            "pages": [
+                "pages/check/preview/Index",
+                "pages/check/checkIng/Index",
+                "pages/check/checkOk/Index",
+                "pages/check/checkFail/Index",
+                "pages/living2Identify/Index",
+                "pages/check/checkAbnormal/Index"
+            ]
+        }
+    ],
+    "window": {
+        "enablePullDownRefresh": false,
+        "onReachBottomDistance": 100,
+        "backgroundColor": "#f8f8f8",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "加载中",
+        "navigationBarTextStyle": "black"
+    },
+    "permission": {
+        "scope.userLocation": {
+            "desc": "该位置信息将为您确认证件照的回执信息"
+        }
+    }
+}

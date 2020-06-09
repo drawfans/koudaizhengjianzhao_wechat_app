@@ -1,0 +1,26 @@
+<view class="custom-class {{utils.bem( 'tabs',[type] )}}">
+    <van-sticky bind:scroll="onTouchScroll" container="{{container}}" disabled="{{!sticky}}" offsetTop="{{offsetTop}}" zIndex="{{zIndex}}">
+        <view class="{{utils.bem( 'tabs__wrap',{scrollable:scrollable} )}} {{type==='line'&&border?'van-hairline--top-bottom':''}}">
+            <slot name="nav-left"></slot>
+            <scroll-view scrollWithAnimation class="{{utils.bem( 'tabs__scroll',[type] )}}" scrollLeft="{{scrollLeft}}" scrollX="{{scrollable}}" style="{{color?'border-color: '+color:''}}">
+                <view class="{{utils.bem( 'tabs__nav',[type] )}} nav-class">
+                    <view class="van-tabs__line" style="{{lineStyle}}" wx:if="{{type==='line'}}"></view>
+                    <view bind:tap="onTap" class="{{getters.tabClass(index===currentIndex,ellipsis)}} {{utils.bem( 'tab',{active:index===currentIndex,disabled:item.disabled,complete:!ellipsis} )}}" data-index="{{index}}" style="{{getters.tabStyle(index===currentIndex,ellipsis,color,type,item.disabled,titleActiveColor,titleInactiveColor,swipeThreshold,scrollable)}}" wx:for="{{tabs}}" wx:key="index">
+                        <view class="{{ellipsis?'van-ellipsis':''}}" style="{{item.titleStyle}}">
+              {{item.title}}
+              <van-info customClass="van-tab__title__info" dot="{{item.dot}}" info="{{item.info}}" wx:if="{{item.info!==null||item.dot}}"></van-info>
+                        </view>
+                    </view>
+                </view>
+            </scroll-view>
+            <slot name="nav-right"></slot>
+        </view>
+    </van-sticky>
+    <view bind:touchcancel="onTouchEnd" bind:touchend="onTouchEnd" bind:touchmove="onTouchMove" bind:touchstart="onTouchStart" class="van-tabs__content">
+        <view class="{{utils.bem( 'tabs__track',[ {animated:animated} ] )}} van-tabs__track" style="{{getters.trackStyle( {duration:duration,currentIndex:currentIndex,animated:animated} )}}">
+            <slot></slot>
+        </view>
+    </view>
+</view>
+<wxs module="utils" src="../wxs/utils.wxs" />
+<wxs module="getters" src="index.wxs" />

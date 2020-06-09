@@ -1,0 +1,15 @@
+<view bind:tap="onClick" class="custom-class {{utils.bem( 'notice-bar',{withicon:mode,wrapable:wrapable} )}}" style="color: {{color}}; background-color: {{backgroundColor}};" wx:if="{{show}}">
+    <van-icon class="van-notice-bar__left-icon" name="{{leftIcon}}" size="16px" wx:if="{{leftIcon}}"></van-icon>
+    <slot name="left-icon" wx:else></slot>
+    <view class="van-notice-bar__wrap">
+        <view animation="{{animationData}}" class="van-notice-bar__content {{!scrollable&&!wrapable?'van-ellipsis':''}}">
+      {{text}}
+    </view>
+    </view>
+    <van-icon catch:tap="onClickIcon" class="van-notice-bar__right-icon" name="cross" wx:if="{{mode==='closeable'}}"></van-icon>
+    <navigator openType="{{openType}}" url="{{url}}" wx:elif="{{mode==='link'}}">
+        <van-icon class="van-notice-bar__right-icon" name="arrow"></van-icon>
+    </navigator>
+    <slot name="right-icon" wx:else></slot>
+</view>
+<wxs module="utils" src="../wxs/utils.wxs" />

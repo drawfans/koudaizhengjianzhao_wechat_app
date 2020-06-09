@@ -1,0 +1,115 @@
+@import "../../../htmlparse/index.wxss";
+
+.refund-submit-cancel {
+    display: flex;
+    flex-flow: column;
+    box-sizing: border-box;
+    height: 100vh;
+    background: #f7f7f7;
+}
+
+.refund-submit-cancel ._header {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    height: 200rpx;
+}
+
+.refund-submit-cancel header {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    height: 200rpx;
+}
+
+.refund-submit-cancel ._header ._h1 {
+    font-size: 34rpx;
+    color: #4293f4;
+    font-weight: 550;
+}
+
+.refund-submit-cancel header h1 {
+    font-size: 34rpx;
+    color: #4293f4;
+    font-weight: 550;
+}
+
+.refund-submit-cancel ._header ._p {
+    font-size: 24rpx;
+    color: #666;
+    margin: 0;
+    line-height: 2;
+}
+
+.refund-submit-cancel header p {
+    font-size: 24rpx;
+    color: #666;
+    margin: 0;
+    line-height: 2;
+}
+
+.refund-submit-cancel ._main {
+    flex: 1;
+    overflow-y: auto;
+    font-size: 28rpx;
+}
+
+.refund-submit-cancel main {
+    flex: 1;
+    overflow-y: auto;
+    font-size: 28rpx;
+}
+
+.refund-submit-cancel ._main ._li {
+    margin-top: 30rpx;
+}
+
+.refund-submit-cancel main li {
+    margin-top: 30rpx;
+}
+
+.refund-submit-cancel ._main ._span {
+    color: #666;
+    margin-right: 40rpx;
+}
+
+.refund-submit-cancel main span {
+    color: #666;
+    margin-right: 40rpx;
+}
+
+.refund-submit-cancel ._main .main-inner {
+    padding: 40rpx 32rpx;
+    background: #fff;
+    margin-top: 20rpx;
+}
+
+.refund-submit-cancel main .main-inner {
+    padding: 40rpx 32rpx;
+    background: #fff;
+    margin-top: 20rpx;
+}
+
+.refund-submit-cancel ._footer {
+    flex: 0 0;
+}
+
+.refund-submit-cancel footer {
+    flex: 0 0;
+}
+
+.refund-button-list {
+    display: flex;
+    justify-content: center;
+    padding: 30rpx;
+}
+
+.refund-button-list .van-button {
+    display: block;
+    flex: 1;
+    margin: 0 10rpx;
+}

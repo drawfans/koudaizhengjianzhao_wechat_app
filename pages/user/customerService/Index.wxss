@@ -1,0 +1,108 @@
+@import "../../../htmlparse/index.wxss";
+
+.p-customerService {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    background-color: #fff;
+    color: #222;
+    padding-bottom: 230rpx;
+}
+
+.p-customerService .bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 30rpx;
+    box-sizing: border-box;
+    background: #fff;
+    text-align: center;
+}
+
+.p-customerService .bottom>._span {
+    line-height: 70rpx;
+    font-size: 24rpx;
+    color: #999;
+}
+
+.p-customerService .bottom>span {
+    line-height: 70rpx;
+    font-size: 24rpx;
+    color: #999;
+}
+
+.p-customerService .bottom .button-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20rpx;
+}
+
+.p-customerService .bottom ._van-button {
+    flex: 1;
+    margin: 0 10rpx;
+}
+
+.p-customerService .bottom van-button {
+    flex: 1;
+    margin: 0 10rpx;
+}
+
+.p-customerService .bottom .van-button {
+    flex: 1;
+    height: 90rpx;
+    font-size: 30rpx;
+    line-height: 90rpx;
+}
+
+.p-customerService .content-list {
+    width: 100%;
+    background-color: #fff;
+    padding-top: 20rpx;
+}
+
+.p-customerService .k-list {
+    width: 690rpx;
+    margin: 20rpx auto 0;
+    padding-bottom: 46rpx;
+    border-bottom: 2rpx solid #ebebeb;
+}
+
+.p-customerService .k-list ._img {
+    width: 34rpx;
+    height: 34rpx;
+    margin-right: 20rpx;
+}
+
+.p-customerService .k-list img {
+    width: 34rpx;
+    height: 34rpx;
+    margin-right: 20rpx;
+}
+
+.p-customerService .k-list ._span {
+    color: #222;
+    font-size: 28rpx;
+    font-weight: bold;
+}
+
+.p-customerService .k-list span {
+    color: #222;
+    font-size: 28rpx;
+    font-weight: bold;
+}
+
+.p-customerService .k-list .k-content {
+    margin-top: 34rpx;
+    color: #999;
+    font-size: 24rpx;
+    line-height: 40rpx;
+}
+
+.p-customerService .k-list .k-content ._p {
+    margin: 0;
+}
+
+.p-customerService .k-list .k-content p {
+    margin: 0;
+}

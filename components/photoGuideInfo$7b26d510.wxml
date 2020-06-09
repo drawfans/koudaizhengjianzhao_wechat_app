@@ -1,0 +1,13 @@
+<template name="photoGuideInfo$7b26d510">
+    <view class="_div photo-guide-info {{h[0].rcl}} {{p}}">
+        <view class="_div image {{h[1].cl}} {{p}}" style="{{h[1].st}}">
+            <image class="_image {{p}}" src="{{h[2].src}}"></image>
+        </view>
+        <view class="_div info-wrap {{p}}">
+            <text class="_text info-content-wrap {{p}}">
+                <text class="_text info-content {{p}}">{{h[7].t}}</text>
+            </text>
+        </view>
+    </view>
+</template>
+<import src="../components/slots.wxml"></import>

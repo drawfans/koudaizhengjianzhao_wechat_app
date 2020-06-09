@@ -1,0 +1,9 @@
+<template name="Index$4c9e0402">
+    <view class="_div {{h[0].rcl}} {{p}}" id="explain">
+        <view class="_div coupon-explain {{p}}">
+            <template is="octoParse" data="{{nodes:h[1].html}}"></template>
+        </view>
+    </view>
+</template>
+<import src="../components/slots.wxml"></import>
+<import src="../htmlparse/index.wxml"></import>

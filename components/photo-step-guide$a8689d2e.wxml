@@ -1,0 +1,49 @@
+<template name="default$46"></template>
+<template name="photo-step-guide$a8689d2e">
+    <view class="_div {{h[0].cl}} {{h[0].rcl}} {{p}}">
+        <view class="_div photo-step-guide {{p}}">
+            <view class="_header {{p}}">
+                <template is="Tips$0ee8fab0" data="{{...$root[ cp+0+(_t||'') ],$root:$root,s_default:'default_45',_t:_t||'',p:p||''}}"></template>
+            </view>
+            <view class="_main {{p}}">
+                <view class="_div photo-step-guide-pic {{p}}" wx:if="{{h[12]._if}}">
+                    <image class="_image {{p}}" mode="widthFix" src="https://c01.parameters.cn/image/20190911111558.png" style="width:100%"></image>
+                    <view class="_div tips tips-1 right2left {{p}}">
+                        <image class="_image {{p}}" mode="widthFix" src="https://static-params.oss-cn-shenzhen.aliyuncs.com/image/3b51b68fa7856b553f8a84efcd4ee6c.png"></image>
+                        <view class="_div line {{p}}"></view>
+                    </view>
+                    <view class="_div tips tips-2 top2bottom {{p}}" wx:if="{{h[20]._if}}">
+                        <image class="_image {{p}}" mode="widthFix" src="https://static-params.oss-cn-shenzhen.aliyuncs.com/image/3d000dc5d6d7eb5616b22b91b4525ff.png"></image>
+                        <view class="_div line {{p}}"></view>
+                        <view class="_div line2 {{p}}"></view>
+                    </view>
+                    <view class="_div tips tips-3 top2bottom {{p}}" wx:if="{{h[27]._if}}">
+                        <image class="_image {{p}}" mode="widthFix" src="https://static-params.oss-cn-shenzhen.aliyuncs.com/image/45f16cbec870bae5dfd4651860240d8.png" style="width:100%"></image>
+                        <view class="_div line {{p}}"></view>
+                    </view>
+                </view>
+            </view>
+            <view class="_footer {{p}}">
+                <view class="_div bottom-tips {{p}}">
+                    <view class="_h2 special-reminder {{p}}">特别提醒</view>
+                    <view class="_ul {{p}}">
+                        <view class="_li {{p}}" wx:for="{{h[38].li}}" wx:for-item="tip" wx:key="index">
+                            <view class="_div {{p}}">
+                                <image class="_image {{p}}" mode="widthFix" src="{{h[ 40+'-'+(tip_i2!==undefined?tip_i2:index) ].src}}"></image>
+                            </view>
+                            <view class="_div {{p}}">
+                                <view class="_b title {{p}}">{{h[ 44+'-'+(tip_i2!==undefined?tip_i2:index) ].t}}</view>
+                                <label class="_span subTitle {{p}}">{{h[ 47+'-'+(tip_i2!==undefined?tip_i2:index) ].t}}</label>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="_div button-wrap {{p}}">
+                    <template is="{{s_default||'default$46'}}" data="{{...$root[c],$root:$root,_t:_t||'',p:p||'',_c:c}}"></template>
+                </view>
+            </view>
+        </view>
+    </view>
+</template>
+<import src="../components/slots.wxml"></import>
+<import src="../components/Tips$0ee8fab0.wxml"></import>

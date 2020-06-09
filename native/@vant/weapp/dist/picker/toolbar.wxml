@@ -1,0 +1,11 @@
+<template name="toolbar">
+    <view class="van-picker__toolbar van-hairline--top-bottom toolbar-class" wx:if="{{showToolbar}}">
+        <view bindtap="emit" class="van-picker__cancel" data-type="cancel" hoverClass="van-picker__cancel--hover" hoverStayTime="70">
+      {{cancelButtonText}}
+    </view>
+        <view class="van-picker__title van-ellipsis" wx:if="{{title}}">{{title}}</view>
+        <view bindtap="emit" class="van-picker__confirm" data-type="confirm" hoverClass="van-picker__confirm--hover" hoverStayTime="70">
+      {{confirmButtonText}}
+    </view>
+    </view>
+</template>

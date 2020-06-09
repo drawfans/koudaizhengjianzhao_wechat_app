@@ -1,0 +1,12 @@
+<template name="Index$6c45b2f3">
+    <view class="_div {{h[0].cl}} {{h[0].rcl}} {{p}}">
+        <view class="_div photoRecord {{p}}">
+            <template is="pull-down-refresh$5ecd62e0" data="{{...$root[ cp+0+(_t||'') ],$root:$root,s_default:'default_31',_t:_t||'',p:p||''}}"></template>
+            <van-dialog class="_van-dialog {{p}}" id="dialog"></van-dialog>
+        </view>
+    </view>
+</template>
+<import src="../components/slots.wxml"></import>
+<import src="../components/Tips$0ee8fab0.wxml"></import>
+<import src="../components/pull-down-refresh$5ecd62e0.wxml"></import>
+<import src="../components/index$343aa2cc.wxml"></import>

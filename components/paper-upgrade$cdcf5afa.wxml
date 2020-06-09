@@ -1,0 +1,15 @@
+<template name="paper-upgrade$cdcf5afa">
+    <view class="_div paperUpgarde {{h[0].rcl}} {{p}}">
+        <view class="_div select {{p}}">
+            <view class="_div paper {{p}}">
+            选择纸质版类型
+            <label bindtap="_pe" class="_span close {{p}}" data-cid="{{_c||c}}" data-hid="{{4}}">X</label>
+            </view>
+            <view class="_div content {{p}}" wx:for="{{h[7].li}}" wx:key="index">
+                <view bindtap="_pe" class="_div {{p}}" data-cid="{{_c||c}}" data-hid="{{8+'-'+(item_i2!==undefined?item_i2:index)}}">{{h[ 9+'-'+(item_i2!==undefined?item_i2:index) ].t}}</view>
+            </view>
+            <view bindtap="_pe" class="_div cancel {{p}}" data-cid="{{_c||c}}" data-hid="{{11}}">取消</view>
+        </view>
+    </view>
+</template>
+<import src="../components/slots.wxml"></import>

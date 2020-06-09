@@ -1,0 +1,39 @@
+<template name="Index$340b6ec3">
+    <view class="_div refund-submit-cancel {{h[0].rcl}} {{p}}">
+        <view class="_header {{p}}">
+            <view class="_h1 {{p}}">{{h[3].t}}</view>
+            <view class="_p {{p}}" wx:if="{{h[ 5+'-'+(item_i2!==undefined?item_i2:index) ]._if}}" wx:for="{{h[5].li}}" wx:key="index">{{h[ 6+'-'+(item_i2!==undefined?item_i2:index) ].t}}</view>
+        </view>
+        <view class="_main {{p}}">
+            <view class="_div main-inner {{p}}">
+                <view class="_div title {{p}}">退款信息</view>
+                <view class="_ul {{p}}">
+                    <view class="_li {{p}}" wx:if="{{h[14]._if}}">
+                        <label class="_span {{p}}">退款金额</label>
+                        <label class="_span {{p}}">{{h[19].t}}</label>
+                    </view>
+                    <view class="_li {{p}}" wx:if="{{h[21]._if}}">
+                        <label class="_span {{p}}">订单编号</label>
+                        <label class="_span {{p}}">{{h[26].t}}</label>
+                    </view>
+                    <view class="_li {{p}}" wx:if="{{h[28]._if}}">
+                        <label class="_span {{p}}">退款原因</label>
+                        <label class="_span {{p}}">{{h[33].t}}</label>
+                    </view>
+                    <view class="_li {{p}}" wx:if="{{h[35]._if}}">
+                        <label class="_span {{p}}">取消原因</label>
+                        <label class="_span {{p}}">{{h[40].t}}</label>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="_footer {{p}}">
+            <view class="_div refund-button-list {{p}}">
+                <van-button bindtap="_pe" class="_van-button van-button {{p}}" data-cid="{{_c||c}}" data-hid="{{44}}" plain="true" size="large" type="primary">联系客服
+            </van-button>
+                <van-button bindtap="_pe" class="_van-button van-button {{p}}" data-cid="{{_c||c}}" data-hid="{{47}}" size="large" type="primary">返回订单</van-button>
+            </view>
+        </view>
+    </view>
+</template>
+<import src="../components/slots.wxml"></import>

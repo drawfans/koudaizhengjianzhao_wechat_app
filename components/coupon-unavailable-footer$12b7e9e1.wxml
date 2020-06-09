@@ -1,0 +1,13 @@
+<template name="coupon-unavailable-footer$12b7e9e1">
+    <view class="_div coupon-unavailable-footer {{h[0].rcl}} {{p}}">
+        <view bindtap="_pe" class="_div coupon-unavailable-footer-header {{p}}" data-cid="{{_c||c}}" data-hid="{{1}}">
+            <van-cell arrowDirection="{{h[2].arrowDirection}}" border="{{h[2].border}}" class="_van-cell {{h[2].cl}} {{p}}" isLink="{{h[2].isLink}}" title="{{h[2].title}}"></van-cell>
+        </view>
+        <view class="_div fold {{p}}" hidden="{{h[4].vs}}">
+            <view class="_ul {{p}}">
+                <view class="_li {{p}}" wx:for="{{h[6].li}}" wx:key="index">{{h[ 7+'-'+(item_i2!==undefined?item_i2:index) ].t}}</view>
+            </view>
+        </view>
+    </view>
+</template>
+<import src="../components/slots.wxml"></import>

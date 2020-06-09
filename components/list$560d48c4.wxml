@@ -1,0 +1,10 @@
+<template name="default$41"></template>
+<template name="list$560d48c4">
+    <view class="_div p-list {{h[0].rcl}} {{p}}" data-title="{{h[0].dataTitle}}">
+        <view class="_div p-list-title {{p}}">{{h[2].t}}</view>
+        <view class="_ul {{p}}">
+            <template is="{{s_default||'default$41'}}" data="{{...$root[c],$root:$root,_t:_t||'',p:p||'',_c:c}}"></template>
+        </view>
+    </view>
+</template>
+<import src="../components/slots.wxml"></import>

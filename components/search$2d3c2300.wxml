@@ -1,0 +1,15 @@
+<template name="innerLeft$44"></template>
+<template name="search$2d3c2300">
+    <view class="_div search {{h[0].rcl}} {{p}}">
+        <view bindtap="_pe" class="_div searchInner {{p}}" data-cid="{{_c||c}}" data-hid="{{1}}">
+            <template is="{{s_innerLeft||'innerLeft$44'}}" data="{{...$root[c],$root:$root,_t:_t||'',p:p||'',_c:c}}"></template>
+            <van-icon class="_van-icon searchIcon {{p}}" name="search"></van-icon>
+            <input bindblur="_pe" bindfocus="_pe" bindinput="_pe" class="_input {{p}}" data-cid="{{_c||c}}" data-hid="{{6}}" placeholder="{{h[6].placeholder}}" type="text" value="{{h[6].value}}"></input>
+            <label class="_span {{p}}" hidden="{{h[8].vs}}">
+                <van-icon catch:tap="_pe" class="_van-icon {{p}}" data-cid="{{_c||c}}" data-hid="{{9}}" name="close"></van-icon>
+            </label>
+        </view>
+        <label bindtap="_pe" class="_span cancel {{p}}" data-cid="{{_c||c}}" data-hid="{{11}}" hidden="{{h[11].vs}}">取消</label>
+    </view>
+</template>
+<import src="../components/slots.wxml"></import>

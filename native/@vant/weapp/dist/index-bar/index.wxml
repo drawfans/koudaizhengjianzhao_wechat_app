@@ -1,0 +1,8 @@
+<view class="van-index-bar">
+    <slot></slot>
+    <view catch:tap="onClick" catch:touchcancel="onTouchStop" catch:touchend="onTouchStop" catch:touchmove="onTouchMove" class="van-index-bar__sidebar" wx:if="{{showSidebar}}">
+        <view class="van-index-bar__index" data-index="{{index}}" style="z-index: {{zIndex+1}}; color: {{activeAnchorIndex===index?highlightColor:''}}" wx:for="{{indexList}}" wx:key="index">
+      {{item}}
+    </view>
+    </view>
+</view>

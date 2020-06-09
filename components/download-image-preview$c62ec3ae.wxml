@@ -1,0 +1,32 @@
+<template name="download-image-preview$c62ec3ae">
+    <view class="_div download-image-preview {{h[0].rcl}} {{p}}" hidden="{{h[0].vs}}">
+        <view class="_div content {{p}}">
+            <view class="_div picTip {{p}}">
+                <view class="_div {{p}}">{{h[4].t}}</view>
+                <view class="_div {{p}}" wx:if="{{h[6]._if}}">（<label class="_span {{p}}">{{h[9].t}}</label>）</view>
+            </view>
+            <swiper autoplay="{{h[12].autoplay}}" bindchange="_pe" circular="true" class="_swiper swipe {{p}}" data-cid="{{_c||c}}" data-hid="{{12}}" indicatorActiveColor="#fff" indicatorDots="{{h[12].indicatorDots}}" interval="300000">
+                <swiper-item class="_swiper-item van-swipe__track {{p}}" wx:for="{{h[13].li}}" wx:for-item="image" wx:key="index">
+                    <view class="_div van-swipe-item-center {{p}}">
+                        <image class="_image {{p}}" mode="aspectFit" src="{{h[ 15+'-'+(image_i2!==undefined?image_i2:index) ].src}}"></image>
+                    </view>
+                </swiper-item>
+            </swiper>
+            <view class="_div title {{p}}">
+                <view class="_div currentCertName {{p}}">左右滑动查看照片</view>
+                <view class="_div right {{p}}">
+                    <label class="_span activity {{h[ 22+'-'+(image_i2!==undefined?image_i2:index) ].cl}} {{p}}" wx:for="{{h[22].li}}" wx:for-item="image" wx:key="index"></label>
+                </view>
+            </view>
+            <label bindtap="_pe" class="_span {{h[24].cl}} {{p}}" data-cid="{{_c||c}}" data-hid="{{24}}" wx:if="{{h[24]._if}}">保存到手机</label>
+            <label class="_span {{h[26].cl}} {{p}}" wx:else>正在保存</label>
+            <view class="_div close {{p}}">
+                <image bindtap="_pe" class="_image {{p}}" data-cid="{{_c||c}}" data-hid="{{30}}" mode="widthFix" src="/static/images/icon-close.png"></image>
+            </view>
+            <view class="_div iosTip {{p}}" wx:if="{{h[32]._if}}">
+                <view class="_p {{p}}">*受IOS系统影响，保存到手机相片质量较差，若需要高质量相片，请选择发送到邮箱。</view>
+            </view>
+        </view>
+    </view>
+</template>
+<import src="../components/slots.wxml"></import>

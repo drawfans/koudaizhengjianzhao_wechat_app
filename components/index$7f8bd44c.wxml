@@ -1,0 +1,9 @@
+<template name="index$7f8bd44c">
+    <view class="_div {{h[0].cl}} {{h[0].rcl}} {{p}}" style="{{h[0].st}}">
+        <label class="_span {{h[1].cl}} {{p}}">
+            <view class="_i {{p}}" wx:for="{{h[2].li}}" wx:key="index"></view>
+            <view class="_view {{h[4].cl}} {{p}}" wx:if="{{h[4]._if}}"></view>
+        </label>
+    </view>
+</template>
+<import src="../components/slots.wxml"></import>

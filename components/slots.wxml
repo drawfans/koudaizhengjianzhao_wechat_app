@@ -1,0 +1,147 @@
+<template name="default_51">{{s['s12'+_t].t}}</template>
+<template name="icon_50">
+    <image class="_image {{p}}" mode="aspectFit" src="{{s['s13'+_t].src}}"></image>
+</template>
+<template name="default_49">{{s['s7'+_t].t}}</template>
+<template name="icon_48">
+    <image class="_image {{p}}" mode="aspectFit" src="{{s['s8'+_t].src}}"></image>
+</template>
+<template name="default_52">
+    <block wx:for="{{s[ 's3'+(_t||'') ].li}}" wx:key="index">
+        <button bindgetuserinfo="_pe" class="_button hide-button {{p}}" data-cid="{{_c||c}}" data-hid="{{'s4'+_t+'-'+(item_i2!==undefined?item_i2:index)}}" data-index="{{s[ 's4'+_t+'-'+(item_i2!==undefined?item_i2:index) ].dataIndex}}" openType="{{s[ 's4'+_t+'-'+(item_i2!==undefined?item_i2:index) ].openType}}" wx:if="{{s[ 's4'+_t+'-'+(item_i2!==undefined?item_i2:index) ]._if}}">
+            <template is="index$3189f902" data="{{...$root[ cp+1+(_t||'')+'-'+(item_i2!==undefined?item_i2:index) ],$root:$root,s_icon:'icon_48',s_default:'default_49',_t:(_t||'')+'-'+(item_i2!==undefined?item_i2:index),p:p||''}}"></template>
+        </button>
+        <button bindtap="_pe" class="_button hide-button {{p}}" data-cid="{{_c||c}}" data-hid="{{'s9'+_t+'-'+(item_i2!==undefined?item_i2:index)}}" wx:else>
+            <template is="index$3189f902" data="{{...$root[ cp+2+(_t||'')+'-'+(item_i2!==undefined?item_i2:index) ],$root:$root,s_icon:'icon_50',s_default:'default_51',_t:(_t||'')+'-'+(item_i2!==undefined?item_i2:index),p:p||''}}"></template>
+        </button>
+    </block>
+</template>
+<template name="default_45">
+    <image alt="address" class="_image address-icon {{p}}" mode="widthFix" src="/static/7-11/ic_locate.png" wx:if="{{s['s5'+_t]._if}}"></image>
+    <image alt="address" class="_image address-icon {{p}}" mode="widthFix" src="/static/icon/ic_locate.png" wx:else></image>
+    <label class="_span certification-info {{p}}" hidden="{{s['s8'+_t].vs}}">{{s['s9'+_t].t}}</label>
+</template>
+<template name="default_37">
+    <view class="_div {{p}}"></view>
+</template>
+<template name="default_30">系统只保留最近50条拍照记录</template>
+<template name="default_31">
+    <template is="Tips$0ee8fab0" data="{{...$root[ cp+1+(_t||'') ],$root:$root,s_default:'default_30',_t:_t||'',p:p||''}}"></template>
+    <view class="_div photoRecordContent {{p}}">
+        <template is="index$343aa2cc" data="{{...$root[ cp+2+(_t||'')+'-'+(item_i2!==undefined?item_i2:index) ],$root:$root,_t:(_t||'')+'-'+(item_i2!==undefined?item_i2:index),p:p||''}}" wx:for="{{s[ 's9'+(_t||'') ].li}}" wx:key="index"></template>
+    </view>
+</template>
+<template name="img_28">
+    <better-image class="_better-image {{p}}" customStyle="{{s['s190'+_t].customStyle}}" mode="widthFix" src="{{s['s190'+_t].src}}"></better-image>
+</template>
+<template name="default_27">
+    <label class="_span {{p}}">{{s['s189'+_t].t}}</label>
+</template>
+<template name="default_26">付款后可获取高清无水印照及云端处理服务</template>
+<template name="default_25">
+    <button bindgetuserinfo="_pe" class="_button van-button van-button--primary select-buttons {{p}}" data-cid="{{_c||c}}" data-hid="{{'s30'+_t}}" data-type="camera" openType="getUserInfo" type="primary">{{s['s31'+_t].t}}</button>
+</template>
+<template name="default_24">
+    <view class="_div {{p}}">
+        <template is="order-item$7143c78a" data="{{...$root[ cp+2+(_t||'')+'-'+(item_i2!==undefined?item_i2:item_i1) ],$root:$root,_t:(_t||'')+'-'+(item_i2!==undefined?item_i2:item_i1),p:p||''}}" wx:for="{{s[ 's10'+(_t||'') ].li}}" wx:for-index="item_i1" wx:key="photoOrderId"></template>
+    </view>
+</template>
+<template name="bodySelect_22">
+    <template is="coupon-button$47a00e4a" data="{{...$root[ cp+3+(_t||'') ],$root:$root,_t:_t||'',p:p||''}}"></template>
+</template>
+<template name="default_23">
+    <template is="coupon$9a23f778" data="{{...$root[ cp+2+(_t||'')+'-'+(coupon_i2!==undefined?coupon_i2:index) ],$root:$root,s_bodySelect:'bodySelect_22',_t:(_t||'')+'-'+(coupon_i2!==undefined?coupon_i2:index),p:p||''}}" wx:for="{{s[ 's13'+(_t||'') ].li}}" wx:for-item="coupon" wx:key="index"></template>
+</template>
+<template name="bodySelect_20">
+    <template is="coupon-button$47a00e4a" data="{{...$root[ cp+2+(_t||'') ],$root:$root,_t:_t||'',p:p||''}}"></template>
+</template>
+<template name="default_21">
+    <template is="coupon$9a23f778" data="{{...$root[ cp+1+(_t||'')+'-'+(couponItem_i2!==undefined?couponItem_i2:index) ],$root:$root,s_bodySelect:'bodySelect_20',_t:(_t||'')+'-'+(couponItem_i2!==undefined?couponItem_i2:index),p:p||''}}" wx:for="{{s[ 's27'+(_t||'') ].li}}" wx:for-item="couponItem" wx:key="index"></template>
+</template>
+<template name="default_18">{{s['s44'+_t].t}}</template>
+<template name="default_19">
+    <template is="list-item$cfbda308" data="{{...$root[ cp+2+(_t||'')+'-'+(item_i2!==undefined?item_i2:item_i1) ],$root:$root,s_default:'default_18',_t:(_t||'')+'-'+(item_i2!==undefined?item_i2:item_i1),p:p||''}}" wx:for="{{s[ 's42'+(_t||'') ].li}}" wx:for-index="item_i1" wx:key="certificationInfoId"></template>
+</template>
+<template name="innerLeft_17">
+    <navigator class="_a searchCity {{p}}" hidden="{{s['s3'+_t].vs}}" url="/packageA/pages/chooseCity/Index">
+        <label bindtap="_pe" class="_span {{p}}" data-cid="{{_c||c}}" data-hid="{{'s4'+_t}}">{{s['s5'+_t].t}}</label>
+        <van-icon class="_van-icon {{p}}" name="arrow-down"></van-icon>
+    </navigator>
+</template>
+<template name="footer_15">
+    <template is="coupon-unavailable-footer$12b7e9e1" data="{{...$root[ cp+5+(_t||'') ],$root:$root,_t:_t||'',p:p||''}}"></template>
+</template>
+<template name="default_16">
+    <template is="coupon$9a23f778" data="{{...$root[ cp+4+(_t||'')+'-'+(coupon_i2!==undefined?coupon_i2:index) ],$root:$root,s_footer:'footer_15',_t:(_t||'')+'-'+(coupon_i2!==undefined?coupon_i2:index),p:p||''}}" wx:for="{{s[ 's19'+(_t||'') ].li}}" wx:for-item="coupon" wx:key="index"></template>
+</template>
+<template name="footer_13">
+    <template is="coupon-unavailable-footer$12b7e9e1" data="{{...$root[ cp+2+(_t||'') ],$root:$root,_t:_t||'',p:p||''}}"></template>
+</template>
+<template name="bodySelect_12">
+    <van-checkbox checkedColor="#52D6C3" class="_van-checkbox {{p}}" style="align-self:center" value="{{s['s11'+_t].value}}"></van-checkbox>
+</template>
+<template name="default_14">
+    <template is="coupon$9a23f778" data="{{...$root[ cp+1+(_t||'')+'-'+(coupon_i2!==undefined?coupon_i2:index) ],$root:$root,s_bodySelect:'bodySelect_12',s_footer:'footer_13',_t:(_t||'')+'-'+(coupon_i2!==undefined?coupon_i2:index),p:p||''}}" wx:for="{{s[ 's9'+(_t||'') ].li}}" wx:for-item="coupon" wx:key="index"></template>
+</template>
+<template name="footer_9">
+    <template is="coupon-unavailable-footer$12b7e9e1" data="{{...$root[ cp+3+(_t||'') ],$root:$root,_t:_t||'',p:p||''}}"></template>
+</template>
+<template name="default_10">
+    <template is="coupon$9a23f778" data="{{...$root[ cp+2+(_t||'')+'-'+(item_i2!==undefined?item_i2:index) ],$root:$root,s_footer:'footer_9',_t:(_t||'')+'-'+(item_i2!==undefined?item_i2:index),p:p||''}}" wx:for="{{s[ 's4'+(_t||'') ].li}}" wx:key="index"></template>
+</template>
+<template name="default_11">
+    <template is="coupon-list$3bead887" data="{{...$root[ cp+1+(_t||'') ],$root:$root,s_default:'default_10',_t:_t||'',p:p||''}}"></template>
+</template>
+<template name="footer_5">
+    <template is="coupon-unavailable-footer$12b7e9e1" data="{{...$root[ cp+5+(_t||'') ],$root:$root,_t:_t||'',p:p||''}}"></template>
+</template>
+<template name="bodySelect_4">
+    <template is="coupon-button$47a00e4a" data="{{...$root[ cp+4+(_t||'') ],$root:$root,_t:_t||'',p:p||''}}"></template>
+</template>
+<template name="default_6">
+    <template is="coupon$9a23f778" data="{{...$root[ cp+3+(_t||'')+'-'+(item_i2!==undefined?item_i2:index) ],$root:$root,s_bodySelect:'bodySelect_4',s_footer:'footer_5',_t:(_t||'')+'-'+(item_i2!==undefined?item_i2:index),p:p||''}}" wx:for="{{s[ 's16'+(_t||'') ].li}}" wx:key="index"></template>
+</template>
+<template name="default_3">
+    <view class="_div {{p}}">卡券使用说明</view>
+    <label bindtap="_pe" class="_span {{p}}" data-cid="{{_c||c}}" data-hid="{{'s9'+_t}}" style="margin-right:20px">查看></label>
+</template>
+<template name="infiniteFinish_8">
+    <view class="_div my-coupon-footer {{p}}">
+        <label class="_span {{p}}" style="margin:15px">暂无更多有效券</label>
+    </view>
+</template>
+<template name="default_7">
+    <template is="Tips$0ee8fab0" data="{{...$root[ cp+1+(_t||'') ],$root:$root,s_default:'default_3',_t:_t||'',p:p||''}}"></template>
+    <view class="_h2 {{p}}" style="height:30px; width:100%" wx:if="{{s['s12'+_t]._if}}"></view>
+    <template is="coupon-list$3bead887" data="{{...$root[ cp+2+(_t||'') ],$root:$root,s_default:'default_6',_t:_t||'',p:p||''}}"></template>
+</template>
+<template name="default_1">{{s['s17'+_t].t}}</template>
+<template name="default_2">
+    <template is="list-item$cfbda308" data="{{...$root[ cp+2+(_t||'')+'-'+(city_i2!==undefined?city_i2:city_i1) ],$root:$root,s_default:'default_1',_t:(_t||'')+'-'+(city_i2!==undefined?city_i2:city_i1),p:p||''}}" wx:for="{{s[ 's15'+(_t||'') ].li}}" wx:for-index="city_i1" wx:for-item="city" wx:key="cityId"></template>
+</template>
+<template name="default_0">{{s['s8'+_t].t}}</template>
+<import src="../htmlparse/index.wxml"></import>
+<import src="../components/list-item$cfbda308.wxml"></import>
+<import src="../components/Tips$0ee8fab0.wxml"></import>
+<import src="../components/coupon-list$3bead887.wxml"></import>
+<import src="../components/coupon$9a23f778.wxml"></import>
+<import src="../components/coupon$9a23f778.wxml"></import>
+<import src="../components/coupon-button$47a00e4a.wxml"></import>
+<import src="../components/coupon-unavailable-footer$12b7e9e1.wxml"></import>
+<import src="../components/coupon-list$3bead887.wxml"></import>
+<import src="../components/coupon$9a23f778.wxml"></import>
+<import src="../components/coupon$9a23f778.wxml"></import>
+<import src="../components/coupon-unavailable-footer$12b7e9e1.wxml"></import>
+<import src="../components/coupon$9a23f778.wxml"></import>
+<import src="../components/coupon-unavailable-footer$12b7e9e1.wxml"></import>
+<import src="../components/coupon$9a23f778.wxml"></import>
+<import src="../components/coupon-unavailable-footer$12b7e9e1.wxml"></import>
+<import src="../components/list-item$cfbda308.wxml"></import>
+<import src="../components/coupon$9a23f778.wxml"></import>
+<import src="../components/coupon-button$47a00e4a.wxml"></import>
+<import src="../components/coupon$9a23f778.wxml"></import>
+<import src="../components/coupon-button$47a00e4a.wxml"></import>
+<import src="../components/order-item$7143c78a.wxml"></import>
+<import src="../components/Tips$0ee8fab0.wxml"></import>
+<import src="../components/index$343aa2cc.wxml"></import>
+<import src="../components/index$3189f902.wxml"></import>

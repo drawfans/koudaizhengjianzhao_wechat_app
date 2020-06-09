@@ -1,0 +1,143 @@
+<template name="Index$4cea7db0">
+    <view class="_div {{h[0].cl}} {{h[0].rcl}} {{p}}">
+        <view class="_div p-submit-order {{p}}">
+            <template is="moneyDetail$148e6ed9" data="{{...$root[ cp+0+(_t||'') ],$root:$root,_t:_t||'',p:p||''}}" wx:if="{{h[2]._if}}"></template>
+            <template is="use-coupon$4887176c" data="{{...$root[ cp+1+(_t||'') ],$root:$root,_t:_t||'',p:p||''}}" wx:if="{{h[5]._if}}"></template>
+            <block wx:else>
+                <van-notice-bar backgroundColor="#ecf9ff" class="_van-notice-bar {{p}}" color="#1989fa" leftIcon="{{h[8].leftIcon}}" style="z-index:1" text="{{h[8].text}}" wx:if="{{h[8]._if}}"></van-notice-bar>
+                <van-cell class="_van-cell address-select {{p}}" isLink="true" url="/pages/address/Index" wx:if="{{h[10]._if}}">
+                    <label class="_span address-select-icon {{p}}" slot="icon">
+                        <image class="_image {{p}}" mode="widthFix" src="../../../static/7-11/ic_address_b.png" wx:if="{{h[12]._if}}"></image>
+                        <image class="_image {{p}}" mode="widthFix" src="../../../static/images/address.png" wx:else></image>
+                    </label>
+                    <view class="_div address-none {{p}}" wx:if="{{h[15]._if}}">
+          点击填写
+        </view>
+                    <view class="_div address-none {{p}}" slot="title" wx:if="{{h[18]._if}}">
+          收货地址
+        </view>
+                    <view class="_div {{p}}" slot="title" wx:else>
+                        <label class="_span name {{p}}">{{h[22].t}}</label>
+                        <label class="_span mobile {{p}}">{{h[25].t}}</label>
+                        <view class="_p address {{p}}">{{h[28].t}}</view>
+                    </view>
+                </van-cell>
+                <van-cell-group class="_van-cell-group {{p}}">
+                    <view class="_div submit-order-content-wrap {{p}}">
+                        <view class="_div photo-info-title {{p}}">相片信息</view>
+                        <view class="_div submit-order-info {{p}}">
+                            <view class="_div submit-order-info-img {{p}}">
+                                <better-image class="_better-image image-cant-touch {{p}}" customStyle="{{h[37].customStyle}}" height="200rpx" mode="heightFix" src="{{h[37].src}}"></better-image>
+                            </view>
+                            <view class="_div submit-order-template {{p}}">
+                                <view class="_div {{p}}" wx:if="{{h[40]._if}}">
+                                    <better-image class="_better-image image-cant-touch {{p}}" customStyle="{{h[41].customStyle}}" height="100rpx" mode="heightFix" src="{{h[41].src}}"></better-image>
+                                </view>
+                                <view class="_div {{p}}" style="display:flex; align-items:center" wx:if="{{h[43]._if}}">
+                                    <better-image class="_better-image image-cant-touch {{p}}" height="100rpx" mode="heightFix" src="{{h[44].src}}"></better-image>
+                                </view>
+                            </view>
+                            <view class="_div submit-order-info-right {{p}}">
+                                <view class="_h3 submit-order-info-name {{p}}">{{h[48].t}}<label class="_span {{p}}" style="font-weight:normal" wx:if="{{h[49]._if}}">--<label class="_span {{p}}" style="color:#02a7f0">{{h[52].t}}</label>
+                                    </label>
+                                </view>
+                                <view class="_div submit-order-info-area {{p}}">{{h[55].t}}</view>
+                                <label class="_span submit-order-info-area {{p}}" wx:if="{{h[57]._if}}">{{h[58].t}}</label>
+                                <view class="_div price {{p}}" wx:if="{{h[60]._if}}">
+                                    <label class="_span {{p}}" wx:if="{{h[61]._if}}">{{h[62].t}}</label>
+                                    <label class="_span {{p}}" wx:else>￥0</label>
+                                    <view class="_s oldPrice {{p}}">{{h[67].t}}</view>
+                                </view>
+                                <view class="_div price {{p}}" wx:else>{{h[69].t}}<view class="_s oldPrice {{p}}" wx:if="{{h[70]._if}}">{{h[71].t}}</view>
+                                </view>
+                            </view>
+                        </view>
+                        <view class="_div tips {{p}}" wx:if="{{h[73]._if}}">{{h[74].t}}</view>
+                    </view>
+                </van-cell-group>
+                <van-cell-group class="_van-cell-group {{p}}" wx:if="{{h[76]._if}}">
+                    <van-cell bindtap="_pe" class="_van-cell {{p}}" data-cid="{{_c||c}}" data-hid="{{77}}" title="查看打印网点">
+                        <van-icon class="_van-icon {{p}}" color="#8a8a8a" name="location" slot="right-icon" style="line-height:inherit"></van-icon>
+                    </van-cell>
+                </van-cell-group>
+                <van-cell-group class="_van-cell-group {{p}}">
+                    <van-cell class="_van-cell {{p}}" title="打印方式" value="前往网点打印" wx:if="{{h[81]._if}}"></van-cell>
+                    <van-cell class="_van-cell {{p}}" title="选择数量" wx:if="{{h[83]._if}}">
+                        <van-stepper bindchange="_pe" class="_van-stepper submit-order-number-select {{p}}" data-cid="{{_c||c}}" data-hid="{{84}}" integer="true" max="{{h[84].max}}" min="{{h[84].min}}" value="{{h[84].value}}"></van-stepper>
+                    </van-cell>
+                    <van-cell class="_van-cell {{p}}" isLink="{{h[86].isLink}}" wx:if="{{h[86]._if}}">
+                        <view class="_view {{p}}" slot="title" style="display:flex; align-items:center">
+                            <text class="_text {{p}}">配送方式</text>
+                            <van-icon bindtap="_pe" class="_van-icon {{p}}" color="#e69414" data-cid="{{_c||c}}" data-hid="{{91}}" name="info-o" size="1.2em" style="margin-left:5px" wx:if="{{h[91]._if}}"></van-icon>
+                        </view>
+                        <label bindtap="_pe" class="_span {{p}}" data-cid="{{_c||c}}" data-hid="{{92}}">{{h[93].t}}</label>
+                    </van-cell>
+                    <van-cell bindtap="_pe" class="_van-cell {{p}}" data-cid="{{_c||c}}" data-hid="{{95}}" isLink="true" title="使用卡券">
+                        <view class="_view cell-center-right {{p}}">
+                            <van-loading class="_van-loading coupon-loading {{p}}" size="30rpx" wx:if="{{h[97]._if}}"></van-loading>
+                            <label class="_span {{p}}" style="{{h[99].st}}" wx:if="{{h[99]._if}}">{{h[100].t}}</label>
+                        </view>
+                    </van-cell>
+                </van-cell-group>
+                <van-cell-group class="_van-cell-group {{p}}">
+                    <van-cell bindtap="_pe" class="_van-cell {{p}}" data-cid="{{_c||c}}" data-hid="{{103}}" isLink="{{h[103].isLink}}" title="支付方式" wx:if="{{h[103]._if}}">
+                        <view class="_view submit-order-form-payment cell-center-right {{p}}">
+                            <image class="_image submit-order-form-payment-icon {{p}}" mode="widthFix" src="{{h[105].src}}"></image>
+                            <view class="_var {{p}}">{{h[108].t}}</view>
+                        </view>
+                    </van-cell>
+                </van-cell-group>
+                <view class="_div submit-order-protocol {{p}}">
+                    <view bindtap="_pe" class="_div img {{p}}" data-cid="{{_c||c}}" data-hid="{{111}}">
+                        <image class="_image {{p}}" mode="widthFix" src="{{h[112].src}}"></image>
+                    </view>
+        购买相片需同意
+        <view bindtap="_pe" class="_div {{p}}" data-cid="{{_c||c}}" data-hid="{{114}}" style="color:#5995EF">
+          《用户购买需知》
+        </view>
+                </view>
+                <view class="_div submit-order-bottom-wrap {{p}}">
+                    <view class="_div submit-order-pay-wrap {{p}}">
+                        <view class="_section left-wrap {{p}}">
+                            <view class="_div price {{p}}" wx:if="{{h[120]._if}}">
+                                <label class="_span {{p}}">{{h[123].t}}</label>
+                                <label class="_span unit {{p}}">￥</label>
+                                <label class="_span var {{p}}">{{h[129].t}}</label>
+                                <label bindtap="_pe" class="_span triangle {{p}}" data-cid="{{_c||c}}" data-hid="{{131}}">明细</label>
+                                <image bindtap="_pe" class="_image triangleImg {{p}}" data-cid="{{_c||c}}" data-hid="{{134}}" mode="widthFix" src="{{h[134].src}}"></image>
+                            </view>
+                            <view class="_div {{p}}" wx:else>正在计算金额</view>
+                        </view>
+                        <button bindgetphonenumber="_pe" class="_button submitOrder {{p}}" data-cid="{{_c||c}}" data-hid="{{139}}" disabled="{{h[139].disabled}}" openType="getPhoneNumber" type="primary" wx:if="{{h[139]._if}}">
+            提交订单
+          </button>
+                        <button bindtap="_pe" class="_button submitOrder {{p}}" data-cid="{{_c||c}}" data-hid="{{141}}" disabled="{{h[141].disabled}}" type="primary" wx:else>
+            提交订单
+          </button>
+                    </view>
+                </view>
+                <van-popup bindclose="_pe" class="_van-popup {{p}}" data-cid="{{_c||c}}" data-hid="{{144}}" position="bottom" show="{{h[144].show}}">
+                    <van-picker bindcancel="_pe" bindconfirm="_pe" class="_van-picker {{p}}" columns="{{h[145].columns}}" data-cid="{{_c||c}}" data-hid="{{145}}" showToolbar="true"></van-picker>
+                </van-popup>
+                <van-popup class="_van-popup {{p}}" position="bottom" value="{{h[147].value}}">
+                    <van-picker bindconfirm="_pe" class="_van-picker {{p}}" columns="{{h[148].columns}}" data-cid="{{_c||c}}" data-hid="{{148}}" showToolbar="true"></van-picker>
+                </van-popup>
+            </block>
+            <template is="index$6e50f885" data="{{...$root[ cp+2+(_t||'') ],$root:$root,_t:_t||'',p:p||''}}"></template>
+            <van-dialog class="_van-dialog {{p}}" id="van-dialog"></van-dialog>
+            <template is="order-dialog$264b07ff" data="{{...$root[ cp+3+(_t||'') ],$root:$root,_t:_t||'',p:p||''}}" wx:if="{{h[155]._if}}"></template>
+        </view>
+        <van-dialog bindclose="_pe" class="_van-dialog {{p}}" data-cid="{{_c||c}}" data-hid="{{158}}" show="{{h[158].show}}" title="物流时效" useSlot="true">
+            <view class="_view logistics {{p}}">
+                <view class="_p {{p}}" style="margin:10px 0" wx:if="{{h[160]._if}}">{{h[161].t}}</view>
+                <image alt="物流时效" class="_image {{p}}" mode="widthFix" src="{{h[163].src}}" style="width:100%" wx:if="{{h[163]._if}}"></image>
+            </view>
+        </van-dialog>
+    </view>
+</template>
+<import src="../components/slots.wxml"></import>
+<import src="../components/Tips$0ee8fab0.wxml"></import>
+<import src="../components/order-dialog$264b07ff.wxml"></import>
+<import src="../components/moneyDetail$148e6ed9.wxml"></import>
+<import src="../components/use-coupon$4887176c.wxml"></import>
+<import src="../components/index$6e50f885.wxml"></import>

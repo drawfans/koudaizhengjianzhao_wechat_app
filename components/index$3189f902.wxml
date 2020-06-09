@@ -1,0 +1,14 @@
+<template name="default$54"></template>
+<template name="icon$53"></template>
+<template name="index$3189f902">
+    <view bindtap="_pe" class="_div par-tabbar-item {{h[0].rcl}} {{p}}" data-cid="{{_c||c}}" data-hid="{{0}}" style="{{h[0].st}}">
+        <view class="_div par-tabbar-content {{p}}">
+            <label class="_span {{h[2].cl}} {{p}}" hidden="{{h[2].vs}}">{{h[3].t}}</label>
+            <template is="{{s_icon||'icon$53'}}" data="{{...$root[c],$root:$root,_t:_t||'',p:p||'',_c:c}}"></template>
+            <label class="_span {{p}}">
+                <template is="{{s_default||'default$54'}}" data="{{...$root[c],$root:$root,_t:_t||'',p:p||'',_c:c}}"></template>
+            </label>
+        </view>
+    </view>
+</template>
+<import src="../components/slots.wxml"></import>

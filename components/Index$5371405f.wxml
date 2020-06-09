@@ -1,0 +1,39 @@
+<template name="Index$5371405f">
+    <view class="_div {{h[0].cl}} {{h[0].rcl}} {{p}}">
+        <view class="_div printPhoto {{p}}">
+            <view class="_div top {{p}}">
+                <image class="_image image {{p}}" mode="widthFix" src="{{h[ 3+'-'+(item_i2!==undefined?item_i2:index) ].src}}" wx:for="{{h[3].li}}" wx:key="index">
+                    <image class="_image icon {{p}}" mode="widthFix" src="../../../static/icon/orderDetail/ic_ydy.png" wx:if="{{h[ 4+'-'+(item_i2!==undefined?item_i2:index) ]._if}}"></image>
+                    <image class="_image icon {{p}}" mode="widthFix" src="../../../static/icon/orderDetail/ic_bfdysb.png" wx:if="{{h[ 6+'-'+(item_i2!==undefined?item_i2:index) ]._if}}"></image>
+                    <image class="_image icon {{p}}" mode="widthFix" src="../../../static/icon/orderDetail/ic_dysb.png" wx:if="{{h[ 8+'-'+(item_i2!==undefined?item_i2:index) ]._if}}"></image>
+                </image>
+            </view>
+            <template is="index$6e50f885" data="{{...$root[ cp+0+(_t||'') ],$root:$root,_t:_t||'',p:p||''}}"></template>
+            <view class="_div bottom {{p}}">
+                <view class="_div content {{p}}" wx:if="{{h[14]._if}}">
+                    <view class="_p success {{p}}">扫描成功，打印中...</view>
+                    <view class="_p printing {{p}}">打印机正在拼命打印中,请注意取走照片</view>
+                    <view class="_div progress {{p}}">
+                        <image class="_image {{p}}" mode="widthFix" src="https://c01.parameters.cn/image/832fe1aae724feac996760f945868d25.gif"></image>
+                    </view>
+                </view>
+                <view class="_div content {{p}}" wx:else>
+                    <view class="_p success {{p}}">{{h[25].t}}</view>
+                    <view class="_p printings {{p}}" wx:if="{{h[27]._if}}">请记得取走您的相片</view>
+                    <view class="_p printings {{p}}" wx:else>请重新扫码打印或前往其他网点进行打印，<label bindtap="_pe" class="_span {{p}}" data-cid="{{_c||c}}" data-hid="{{31}}">点此查看附近网点</label>
+                    </view>
+                    <view class="_div button-list {{p}}">
+                        <van-button bindtap="_pe" class="_van-button van-button {{p}}" data-cid="{{_c||c}}" data-hid="{{35}}" size="large" type="primary" wx:if="{{h[35]._if}}">返回首页
+            </van-button>
+                        <van-button bindtap="_pe" class="_van-button van-button {{p}}" data-cid="{{_c||c}}" data-hid="{{38}}" size="large" type="primary">返回订单详情
+            </van-button>
+                        <van-button bindtap="_pe" class="_van-button van-button {{p}}" data-cid="{{_c||c}}" data-hid="{{41}}" size="large" type="primary" wx:if="{{h[41]._if}}">扫码打印
+            </van-button>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</template>
+<import src="../components/slots.wxml"></import>
+<import src="../components/index$6e50f885.wxml"></import>

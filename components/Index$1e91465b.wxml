@@ -1,0 +1,45 @@
+<template name="Index$1e91465b">
+    <view class="_div {{h[0].cl}} {{h[0].rcl}} {{p}}">
+        <view class="_div custom-size-photo {{p}}">
+            <view class="_div mmBlock {{p}}"></view>
+            <view class="_section container {{p}}">
+                <view class="_div image-wrap {{p}}">
+                    <view class="_div height-control {{p}}" style="{{h[6].st}}">
+                        <label class="_span {{p}}">{{h[8].t}}</label>
+                    </view>
+                    <view class="_div imageWrap {{p}}" style="{{h[10].st}}">
+                        <image alt="true" bindload="_pe" class="_image image {{p}}" data-cid="{{_c||c}}" data-hid="{{11}}" mode="widthFix" src="https://c01.parameters.cn/image/fw8mR5KEDQQUimnX.png" style="{{h[11].st}}"></image>
+                    </view>
+                    <view class="_div width-control {{p}}" style="{{h[13].st}}">
+                        <label class="_span {{p}}">{{h[15].t}}</label>
+                    </view>
+                </view>
+            </view>
+            <view class="_section form {{p}}">
+                <van-tabs bindchange="_pe" class="_van-tabs {{p}}" color="#1989fa" data-cid="{{_c||c}}" data-hid="{{18}}" value="{{h[18].value}}">
+                    <van-tab class="_van-tab {{p}}" title="{{h[ 19+'-'+(unit_i2!==undefined?unit_i2:index) ].title}}" wx:for="{{h[19].li}}" wx:for-item="unit" wx:key="index"></van-tab>
+                </van-tabs>
+                <view class="_div form-item-wrap {{p}}">
+                    <view class="_div form-item-input {{p}}">
+                        <view class="_div custom-input {{p}}">
+                            <input bindinput="_pe" class="_input {{p}}" data-cid="{{_c||c}}" data-hid="{{24}}" max="200" min="10" placeholder="{{h[24].placeholder}}" type="number" value="{{h[24].value}}"></input>
+                            <label class="_span {{p}}">{{h[27].t}}</label>
+                        </view>
+                        <label class="_label {{p}}">宽度</label>
+                    </view>
+                    <view class="_div symbol {{p}}">X</view>
+                    <view class="_div form-item-input {{p}}">
+                        <view class="_div custom-input {{p}}">
+                            <input bindinput="_pe" class="_input {{p}}" data-cid="{{_c||c}}" data-hid="{{37}}" max="200" min="10" placeholder="{{h[37].placeholder}}" type="number" value="{{h[37].value}}"></input>
+                            <label class="_span {{p}}">{{h[40].t}}</label>
+                        </view>
+                        <label class="_label {{p}}">高度</label>
+                    </view>
+                </view>
+                <van-button bindtap="_pe" class="_van-button {{p}}" data-cid="{{_c||c}}" data-hid="{{45}}" disabled="{{h[45].disabled}}" size="large" type="primary">下一步
+        </van-button>
+            </view>
+        </view>
+    </view>
+</template>
+<import src="../components/slots.wxml"></import>

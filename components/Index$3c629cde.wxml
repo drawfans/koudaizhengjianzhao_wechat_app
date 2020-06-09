@@ -1,0 +1,145 @@
+<template name="Index$3c629cde">
+    <view class="_div {{h[0].cl}} {{h[0].rcl}} {{p}}">
+        <view class="_div order-detail {{p}}">
+            <template is="paper-upgrade$cdcf5afa" data="{{...$root[ cp+0+(_t||'') ],$root:$root,_t:_t||'',p:p||''}}" wx:if="{{h[2]._if}}"></template>
+            <view class="_div order-detail-status {{p}}" style="{{h[5].st}}" wx:if="{{h[5]._if}}">
+                <view catch:tap="_pe" class="_view delete-icon-wrap {{p}}" data-cid="{{_c||c}}" data-hid="{{6}}">
+                    <image class="_image delete-icon {{p}}" mode="widthFix" src="/static/icon/deleteWhite.png"></image>
+                </view>
+                <view class="_div order-detail-status-title {{p}}" wx:if="{{h[9]._if}}">
+                    <image class="_image order-detail-status-title-icon {{p}}" mode="widthFix" src="{{h[10].src}}"></image>
+                    <label class="_span {{p}}">{{h[13].t}}</label>
+                </view>
+                <view class="_div order-detail-status-text {{p}}" wx:if="{{h[15]._if}}">{{h[16].t}}</view>
+                <view class="_div order-detail-status-text {{p}}" wx:if="{{h[18]._if}}">{{h[19].t}}<label bindtap="_pe" class="_span clickView {{p}}" data-cid="{{_c||c}}" data-hid="{{20}}" wx:if="{{h[20]._if}}">点此查看附近网点</label>
+                </view>
+                <view class="_div order-detail-status-buttons {{p}}" wx:if="{{h[23]._if}}">
+                    <van-button bindtap="_pe" class="_van-button {{p}}" data-cid="{{_c||c}}" data-hid="{{24+'-'+(button_i2!==undefined?button_i2:index)}}" style="{{h[ 24+'-'+(button_i2!==undefined?button_i2:index) ].st}}" wx:for="{{h[24].li}}" wx:for-item="button" wx:key="index">{{h[ 25+'-'+(button_i2!==undefined?button_i2:index) ].t}}</van-button>
+                </view>
+            </view>
+            <van-cell class="_van-cell address-select {{p}}" wx:if="{{h[27]._if}}">
+                <label class="_span address-select-icon {{p}}" slot="icon">
+                    <image class="_image icon {{p}}" mode="widthFix" src="../../../static/7-11/ic_address_b.png" wx:if="{{h[29]._if}}"></image>
+                    <image class="_image icon {{p}}" mode="widthFix" src="../../../static/images/address.png" wx:else></image>
+                </label>
+                <view class="_div {{p}}" slot="title">
+                    <label class="_span name {{p}}">{{h[34].t}}</label>
+                    <label class="_span mobile {{p}}">{{h[37].t}}</label>
+                    <view class="_p address {{p}}">{{h[40].t}}</view>
+                </view>
+            </van-cell>
+            <van-cell-group class="_van-cell-group {{p}}">
+                <van-cell bindtap="_pe" class="_van-cell address-select {{p}}" data-cid="{{_c||c}}" data-hid="{{43}}" title="查看打印网点" wx:if="{{h[43]._if}}">
+                    <van-icon class="_van-icon {{p}}" color="#8a8a8a" name="location" slot="right-icon" style="line-height:inherit"></van-icon>
+                </van-cell>
+            </van-cell-group>
+            <view class="_div order-detail-wrap {{p}}">
+                <view class="_h2 order-detail-title {{p}}">{{h[48].t}}<label class="_span {{p}}" style="font-weight:normal" wx:if="{{h[49]._if}}">--<label class="_span {{p}}" style="color:#02a7f0">{{h[52].t}}</label>
+                    </label>
+                </view>
+                <view class="_div order-detail-photo-info-wrap {{p}}">
+                    <view class="_div order-detail-photo-info-inner-wrap {{p}}">
+                        <view bindtap="_pe" class="_div photo-wrap {{p}}" data-cid="{{_c||c}}" data-hid="{{56}}">
+                            <image alt="照片" class="_image {{p}}" mode="widthFix" src="{{h[57].src}}" style="{{h[57].st}}" wx:if="{{h[57]._if}}"></image>
+                            <image alt="原图" class="_image {{p}}" mode="widthFix" src="{{h[58].src}}" style="{{h[58].st}}" wx:else></image>
+                        </view>
+                        <view class="_div attached-image {{p}}">
+                            <image alt="排版照" bindtap="_pe" class="_image {{p}}" data-cid="{{_c||c}}" data-hid="{{61}}" mode="widthFix" src="{{h[61].src}}" style="{{h[61].st}}" wx:if="{{h[61]._if}}"></image>
+                            <image alt="电子回执" bindtap="_pe" class="_image {{p}}" data-cid="{{_c||c}}" data-hid="{{63}}" mode="widthFix" src="{{h[63].src}}" wx:if="{{h[63]._if}}"></image>
+                        </view>
+                        <view class="_div order-detail-photo-info {{p}}">
+                            <view class="_h2 {{p}}">{{h[67].t}}</view>
+                            <label class="_span amount {{p}}">{{h[70].t}}</label>
+                        </view>
+                    </view>
+                    <view class="_div tips {{p}}">注:上述示意图仅供参考，具体效果以实际为准</view>
+                </view>
+            </view>
+            <view class="_section order-detail-list-wrap {{p}}">
+                <view class="_h2 order-detail-list-title {{p}}">结算信息</view>
+                <view class="_ul order-detail-list {{p}}">
+                    <view class="_li {{p}}">
+                        <label class="_span {{p}}">商品总价</label>
+                        <view class="_var {{p}}">{{h[85].t}}</view>
+                    </view>
+                    <view class="_li {{p}}">
+                        <label class="_span {{p}}">优惠金额</label>
+                        <view class="_var {{p}}">{{h[92].t}}</view>
+                    </view>
+                    <view class="_li {{p}}">
+                        <label class="_span {{p}}">运费金额</label>
+                        <view class="_var {{p}}">{{h[99].t}}</view>
+                    </view>
+                    <view class="_li {{p}}">
+                        <label class="_span {{p}}">支付金额</label>
+                        <view class="_var {{p}}" style="color:#f00">{{h[106].t}}</view>
+                    </view>
+                </view>
+                <view class="_div invoice-tips {{p}}">*如需发票，请联系线上客服。电子发票会在受理后的3-5个工作日发送到邮箱，谢谢。</view>
+                <view class="_h2 order-detail-list-title {{p}}">订单信息</view>
+                <view class="_ul order-detail-list {{p}}">
+                    <view bindtap="_pe" class="_li {{p}}" data-cid="{{_c||c}}" data-hid="{{115}}">
+                        <label class="_span {{p}}">订单号</label>
+                        <label class="_span {{p}}">
+                            <button class="_button cp-btn {{p}}">复制</button>
+                            <label class="_span {{p}}">{{h[124].t}}</label>
+                        </label>
+                    </view>
+                    <view bindtap="_pe" class="_li {{p}}" data-cid="{{_c||c}}" data-hid="{{126}}" wx:if="{{h[126]._if}}">
+                        <label class="_span {{p}}">回执号</label>
+                        <label class="_span {{p}}">
+                            <button class="_button cp-btn {{p}}">复制</button>
+                            <label class="_span {{p}}">{{h[135].t}}</label>
+                        </label>
+                    </view>
+                    <view bindtap="_pe" class="_li {{p}}" data-cid="{{_c||c}}" data-hid="{{137}}" wx:if="{{h[137]._if}}">
+                        <label class="_span {{p}}">物流单号</label>
+                        <label class="_span {{p}}">
+                            <button class="_button cp-btn {{p}}">复制</button>
+                            <label class="_span {{p}}">{{h[146].t}}</label>
+                        </label>
+                    </view>
+                    <view class="_li {{p}}" wx:if="{{h[148]._if}}">
+                        <label class="_span {{p}}">物流名称</label>
+                        <view class="_var {{p}}">{{h[153].t}}</view>
+                    </view>
+                    <view class="_li {{p}}">
+                        <label class="_span {{p}}">下单时间</label>
+                        <view class="_var {{p}}">{{h[160].t}}</view>
+                    </view>
+                    <view class="_li {{p}}" wx:if="{{h[162]._if}}">
+                        <label class="_span {{p}}">支付方式</label>
+                        <view class="_var {{p}}">{{h[167].t}}</view>
+                    </view>
+                </view>
+            </view>
+            <view class="_div order-detail-button-list {{p}}" wx:if="{{h[169]._if}}">
+                <van-button bindtap="_pe" class="_van-button van-button {{p}}" data-cid="{{_c||c}}" data-hid="{{171+'-'+(item_i2!==undefined?item_i2:index)}}" disabled="{{h[ 171+'-'+(item_i2!==undefined?item_i2:index) ].disabled}}" plain="{{h[ 171+'-'+(item_i2!==undefined?item_i2:index) ].plain}}" size="{{h[ 171+'-'+(item_i2!==undefined?item_i2:index) ].size}}" type="{{h[ 171+'-'+(item_i2!==undefined?item_i2:index) ].type}}" wx:if="{{h[ 171+'-'+(item_i2!==undefined?item_i2:index) ]._if}}" wx:for="{{h[170].li}}">{{h[ 172+'-'+(item_i2!==undefined?item_i2:index) ].t}}</van-button>
+            </view>
+            <van-popup class="_van-popup {{p}}" position="bottom" value="{{h[174].value}}">
+                <van-picker bindconfirm="_pe" class="_van-picker {{p}}" columns="{{h[175].columns}}" data-cid="{{_c||c}}" data-hid="{{175}}" showToolbar="true"></van-picker>
+            </van-popup>
+            <template is="index$6e50f885" data="{{...$root[ cp+1+(_t||'') ],$root:$root,_t:_t||'',p:p||''}}"></template>
+            <template is="send-email$222dba6f" data="{{...$root[ cp+2+(_t||'') ],$root:$root,_t:_t||'',p:p||''}}" wx:if="{{h[180]._if}}"></template>
+            <template is="download-image-preview$c62ec3ae" data="{{...$root[ cp+3+(_t||'') ],$root:$root,_t:_t||'',p:p||''}}" wx:if="{{h[183]._if}}"></template>
+            <template is="image-preview$1259f4fe" data="{{...$root[ cp+4+(_t||'') ],$root:$root,s_default:'default_27',s_img:'img_28',_t:_t||'',p:p||''}}" wx:if="{{h[186]._if}}"></template>
+            <van-dialog bindclose="_pe" cancelButtonText="直接重拍" class="_van-dialog {{p}}" confirmButtonOpenType="contact" confirmButtonText="联系客服" data-cid="{{_c||c}}" data-hid="{{193}}" sessionFrom="{{h[193].sessionFrom}}" show="{{h[193].show}}" showCancelButton="true" title="{{h[193].title}}" useSlot="true" wx:if="{{h[192]._if}}">
+                <view class="_div remake {{p}}">
+                    <view class="_p {{p}}">您只需要根据以下提示进行一点调整就能拍出合格的照片啦：</view>
+                    <view class="_li {{p}}" wx:for="{{h[198].li}}" wx:key="index">
+                        <label class="_span idot {{p}}"></label>
+                        <label class="_span item {{p}}">{{h[ 202+'-'+(item_i2!==undefined?item_i2:index) ].t}}</label>
+                    </view>
+                    <view class="_p success {{p}}">建议您联系客服，我们会给您更高效的指引，帮助您一次拍出合格的照片！</view>
+                </view>
+            </van-dialog>
+            <van-dialog class="_van-dialog {{p}}" id="van-dialog"></van-dialog>
+        </view>
+    </view>
+</template>
+<import src="../components/slots.wxml"></import>
+<import src="../components/send-email$222dba6f.wxml"></import>
+<import src="../components/download-image-preview$c62ec3ae.wxml"></import>
+<import src="../components/paper-upgrade$cdcf5afa.wxml"></import>
+<import src="../components/image-preview$1259f4fe.wxml"></import>
+<import src="../components/index$6e50f885.wxml"></import>

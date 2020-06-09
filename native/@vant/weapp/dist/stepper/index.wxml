@@ -1,0 +1,6 @@
+<view class="van-stepper custom-class">
+    <view bind:tap="onTap" bind:touchend="onTouchEnd" bind:touchstart="onTouchStart" class="minus-class {{utils.bem( 'stepper__minus',{disabled:disabled||disableMinus||value<=min} )}}" data-type="minus" hoverClass="van-stepper__minus--hover" hoverStayTime="70" style="{{buttonStyle}}" wx:if="{{showMinus}}"></view>
+    <input bind:blur="onBlur" bind:focus="onFocus" bindinput="onInput" class="input-class {{utils.bem( 'stepper__input',{disabled:disabled||disableInput} )}}" disabled="{{disabled||disableInput}}" focus="{{focus}}" style="{{inputStyle}}" type="{{integer?'number':'digit'}}" value="{{value}}"></input>
+    <view bind:tap="onTap" bind:touchend="onTouchEnd" bind:touchstart="onTouchStart" class="plus-class {{utils.bem( 'stepper__plus',{disabled:disabled||disablePlus||value>=max} )}}" data-type="plus" hoverClass="van-stepper__plus--hover" hoverStayTime="70" style="{{buttonStyle}}" wx:if="{{showPlus}}"></view>
+</view>
+<wxs module="utils" src="../wxs/utils.wxs" />

@@ -1,0 +1,52 @@
+<template name="Index$13cb6f1e">
+    <view class="_div more {{h[0].rcl}} {{p}}">
+        <template is="search$2d3c2300" data="{{...$root[ cp+0+(_t||'') ],$root:$root,s_innerLeft:'innerLeft_17',_t:_t||'',p:p||''}}"></template>
+        <block wx:if="{{h[9]._if}}">
+            <van-tabs active="{{h[10].active}}" animated="true" bindchange="_pe" class="_van-tabs tab {{p}}" data-cid="{{_c||c}}" data-hid="{{10}}" lineWidth="50" wx:if="{{h[10]._if}}">
+                <van-tab class="_van-tab {{p}}" title="{{h[ 11+'-'+(parentList_i2!==undefined?parentList_i2:index) ].title}}" titleActiveColor="#000" wx:if="{{h[ 11+'-'+(parentList_i2!==undefined?parentList_i2:index) ]._if}}" wx:for="{{h[11].li}}" wx:for-item="parentList"></van-tab>
+            </van-tabs>
+            <view class="_div content {{p}}" hidden="{{h[13].vs}}" id="content">
+                <view class="_ul list {{p}}">
+                    <view class="_li {{p}}" id="{{h[ 15+'-'+(parentList_i2!==undefined?parentList_i2:index) ].id}}" wx:if="{{h[ 15+'-'+(parentList_i2!==undefined?parentList_i2:index) ]._if}}" wx:for="{{h[15].li}}" wx:for-item="parentList">
+                        <view class="_h2 {{p}}">{{h[ 17+'-'+(parentList_i2!==undefined?parentList_i2:index) ].t}}</view>
+                        <view class="_ul itemList {{p}}">
+                            <view bindtap="_pe" class="_li {{p}}" data-cid="{{_c||c}}" data-hid="{{20+'-'+(parentList_i2!==undefined?parentList_i2:index)+'-'+(item_i2!==undefined?item_i2:item_i1)}}" wx:for="{{h[ 20+'-'+(parentList_i2!==undefined?parentList_i2:index) ].li}}" wx:for-index="item_i1">
+                                <image class="_image bubble {{p}}" lazyLoad="true" src="{{h[ 21+'-'+(parentList_i2!==undefined?parentList_i2:index)+'-'+(item_i2!==undefined?item_i2:item_i1) ].src}}" wx:if="{{h[ 21+'-'+(parentList_i2!==undefined?parentList_i2:index)+'-'+(item_i2!==undefined?item_i2:item_i1) ]._if}}"></image>
+                                <image class="_image icon {{p}}" lazyLoad="true" src="{{h[ 23+'-'+(parentList_i2!==undefined?parentList_i2:index)+'-'+(item_i2!==undefined?item_i2:item_i1) ].src}}"></image>
+                                <label class="_span {{p}}">{{h[ 26+'-'+(parentList_i2!==undefined?parentList_i2:index)+'-'+(item_i2!==undefined?item_i2:item_i1) ].t}}</label>
+                                <label class="_span desc {{p}}">{{h[ 29+'-'+(parentList_i2!==undefined?parentList_i2:index)+'-'+(item_i2!==undefined?item_i2:item_i1) ].t}}</label>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="_div hotSearch {{p}}" hidden="{{h[31].vs}}">
+                <view class="_h2 {{p}}">热门搜索</view>
+                <view class="_ul {{p}}">
+                    <view bindtap="_pe" class="_li {{p}}" data-cid="{{_c||c}}" data-hid="{{36+'-'+(item_i2!==undefined?item_i2:index)}}" wx:for="{{h[36].li}}" wx:key="index">{{h[ 37+'-'+(item_i2!==undefined?item_i2:index) ].t}}</view>
+                </view>
+            </view>
+            <view class="_div searchResult {{p}}" hidden="{{h[39].vs}}">
+                <template is="list$560d48c4" data="{{...$root[ cp+1+(_t||'')+'-'+(parentList_i2!==undefined?parentList_i2:index) ],$root:$root,s_default:'default_19',_t:(_t||'')+'-'+(parentList_i2!==undefined?parentList_i2:index),p:p||''}}" wx:for="{{h[40].li}}" wx:for-item="parentList" wx:key="index"></template>
+            </view>
+        </block>
+        <view class="_div hotSearch {{p}}" wx:if="{{h[46]._if}}">
+            <view class="_h2 {{p}}">
+      历史搜索<image bindtap="_pe" class="_image delete {{p}}" data-cid="{{_c||c}}" data-hid="{{49}}" mode="widthFix" src="../../static/icon/delete.png"></image>
+            </view>
+            <view class="_ul {{p}}">
+                <view bindtap="_pe" class="_li {{p}}" data-cid="{{_c||c}}" data-hid="{{52+'-'+(item_i2!==undefined?item_i2:index)}}" wx:for="{{h[52].li}}" wx:key="index">{{h[ 53+'-'+(item_i2!==undefined?item_i2:index) ].t}}</view>
+            </view>
+        </view>
+        <template is="index$5962418e" data="{{...$root[ cp+3+(_t||'') ],$root:$root,_t:_t||'',p:p||''}}"></template>
+        <van-dialog class="_van-dialog {{p}}" id="van-dialog"></van-dialog>
+        <template is="index$6e50f885" data="{{...$root[ cp+4+(_t||'') ],$root:$root,_t:_t||'',p:p||''}}"></template>
+        <van-dialog bindgetuserinfo="_pe" class="_van-dialog {{p}}" confirmButtonText="授权" data-cid="{{_c||c}}" data-hid="{{63}}" id="getUserInfoDialog"></van-dialog>
+    </view>
+</template>
+<import src="../components/slots.wxml"></import>
+<import src="../components/search$2d3c2300.wxml"></import>
+<import src="../components/list-item$cfbda308.wxml"></import>
+<import src="../components/list$560d48c4.wxml"></import>
+<import src="../components/index$5962418e.wxml"></import>
+<import src="../components/index$6e50f885.wxml"></import>

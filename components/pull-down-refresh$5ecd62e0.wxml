@@ -1,0 +1,24 @@
+<template name="infinite$40"></template>
+<template name="infiniteFinish$39"></template>
+<template name="default$38"></template>
+<template name="pull-down-refresh$5ecd62e0">
+    <view class="_view pull-down-refresh {{h[0].rcl}} {{p}}">
+        <view class="_div {{p}}" style="position:relative">
+            <template is="{{s_default||'default$38'}}" data="{{...$root[c],$root:$root,_t:_t||'',p:p||'',_c:c}}"></template>
+        </view>
+        <view class="_div footer {{p}}" wx:if="{{h[4]._if}}">
+            <block wx:if="{{h[5]._if}}">
+                <template is="{{s_infiniteFinish||'infiniteFinish$39'}}" data="{{...$root[c],$root:$root,_t:_t||'',p:p||'',_c:c}}"></template>
+                <view class="_div infinite-finish {{p}}" wx:if="{{h[8]._if}}">已经到底了</view>
+            </block>
+            <block wx:elif="{{h[10]._if}}">
+                <template is="{{s_infinite||'infinite$40'}}" data="{{...$root[c],$root:$root,_t:_t||'',p:p||'',_c:c}}"></template>
+                <view class="_div infinite {{p}}" wx:if="{{h[13]._if}}">
+                    <van-loading class="_van-loading {{p}}" size="26rpx"></van-loading>
+                    <label class="_span {{p}}">加载中……</label>
+                </view>
+            </block>
+        </view>
+    </view>
+</template>
+<import src="../components/slots.wxml"></import>

@@ -1,0 +1,26 @@
+<template name="Index$28eb2b42">
+    <view class="_div {{h[0].cl}} {{h[0].rcl}} {{p}}">
+        <view class="_div p-customerService {{p}}">
+            <view class="_div content-list {{p}}" wx:for="{{h[2].li}}" wx:key="index">
+                <view bindtap="_pe" class="_div k-list {{p}}" data-cid="{{_c||c}}" data-hid="{{3+'-'+(item_i2!==undefined?item_i2:index)}}">
+                    <view class="_div k-title {{p}}">
+                        <view class="_div f-v {{p}}">
+                            <label class="_span {{p}}">{{h[ 7+'-'+(item_i2!==undefined?item_i2:index) ].t}}</label>
+                        </view>
+                        <view class="_div k-content {{p}}">{{h[ 10+'-'+(item_i2!==undefined?item_i2:index) ].t}}</view>
+                    </view>
+                </view>
+            </view>
+            <view class="_div bottom {{p}}">
+                <label class="_span {{p}}">{{h[14].t}}</label>
+                <view class="_div button-list {{p}}">
+                    <van-button bindtap="_pe" class="_van-button {{p}}" data-cid="{{_c||c}}" data-hid="{{17}}" plain="true" size="large" type="primary" wx:if="{{h[17]._if}}">拨打电话
+             </van-button>
+                    <van-button class="_van-button {{p}}" openType="contact" sessionFrom="{{h[20].sessionFrom}}" size="large" type="primary">在线咨询
+             </van-button>
+                </view>
+            </view>
+        </view>
+    </view>
+</template>
+<import src="../components/slots.wxml"></import>

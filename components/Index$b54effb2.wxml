@@ -1,0 +1,18 @@
+<template name="Index$b54effb2">
+    <view class="_div {{h[0].cl}} {{h[0].rcl}} {{p}}">
+        <view class="_div couponTips {{p}}">
+            <template is="pull-down-refresh$5ecd62e0" data="{{...$root[ cp+0+(_t||'') ],$root:$root,s_default:'default_7',s_infiniteFinish:'infiniteFinish_8',_t:_t||'',p:p||''}}"></template>
+            <view class="_div coupon-footer {{p}}">
+                <button bindtap="_pe" class="_button return-colors {{p}}" data-cid="{{_c||c}}" data-hid="{{29}}" plain="true" type="primary">返回首页</button>
+                <button bindtap="_pe" class="_button return-colors {{p}}" data-cid="{{_c||c}}" data-hid="{{32}}" plain="true" type="primary">查看无效券</button>
+            </view>
+        </view>
+    </view>
+</template>
+<import src="../components/slots.wxml"></import>
+<import src="../components/Tips$0ee8fab0.wxml"></import>
+<import src="../components/pull-down-refresh$5ecd62e0.wxml"></import>
+<import src="../components/coupon-list$3bead887.wxml"></import>
+<import src="../components/coupon-button$47a00e4a.wxml"></import>
+<import src="../components/coupon$9a23f778.wxml"></import>
+<import src="../components/coupon-unavailable-footer$12b7e9e1.wxml"></import>

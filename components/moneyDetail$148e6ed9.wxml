@@ -1,0 +1,24 @@
+<template name="moneyDetail$148e6ed9">
+    <view class="_div moneyDetail {{h[0].rcl}} {{p}}">
+        <view class="_div detailed {{p}}">
+            <view class="_li {{p}}">
+                <label class="_span {{p}}">商品</label>
+                <label class="_span {{p}}" wx:if="{{h[6]._if}}">{{h[7].t}}</label>
+                <label class="_span {{p}}" wx:else>{{h[9].t}}</label>
+            </view>
+            <view class="_li {{p}}" wx:if="{{h[11]._if}}">
+                <label class="_span {{p}}">运费</label>
+                <label class="_span {{p}}">{{h[16].t}}</label>
+            </view>
+            <view class="_li {{p}}" wx:if="{{h[18]._if}}">
+                <label class="_span {{p}}">优惠券</label>
+                <label class="_span {{p}}">{{h[23].t}}</label>
+            </view>
+            <view class="_li {{p}}" wx:if="{{h[25]._if}}">
+                <label class="_span {{p}}">原订单抵扣金额</label>
+                <label class="_span {{p}}">{{h[30].t}}</label>
+            </view>
+        </view>
+    </view>
+</template>
+<import src="../components/slots.wxml"></import>

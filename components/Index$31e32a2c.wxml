@@ -1,0 +1,24 @@
+<template name="Index$31e32a2c">
+    <view class="_div {{h[0].cl}} {{h[0].rcl}} {{p}}">
+        <template is="index$6e50f885" data="{{...$root[ cp+0+(_t||'') ],$root:$root,_t:_t||'',p:p||''}}"></template>
+        <view class="_div exchange-coupon {{p}}" wx:if="{{h[4]._if}}">
+            <van-field bindinput="_pe" class="_van-field {{p}}" data-cid="{{_c||c}}" data-hid="{{5}}" placeholder="请输入兑换码" size="large" value="{{h[5].value}}"></van-field>
+            <view class="_div button-wrap {{p}}">
+                <van-button bindgetuserinfo="_pe" class="_van-button {{p}}" data-cid="{{_c||c}}" data-hid="{{8}}" loading="{{h[8].loading}}" openType="getUserInfo" size="large" type="primary">兑换</van-button>
+            </view>
+        </view>
+        <view class="_div exchange-success {{p}}" wx:else>
+            <template is="coupon-list$3bead887" data="{{...$root[ cp+1+(_t||'') ],$root:$root,s_default:'default_23',_t:_t||'',p:p||''}}"></template>
+            <view class="_div button-list {{p}}">
+                <van-button bindtap="_pe" class="_van-button {{p}}" data-cid="{{_c||c}}" data-hid="{{20}}" plain="true" size="large" type="primary">返回首页</van-button>
+                <van-button bindtap="_pe" class="_van-button {{p}}" data-cid="{{_c||c}}" data-hid="{{23}}" size="large" type="primary">继续兑换</van-button>
+            </view>
+        </view>
+        <van-dialog bindgetuserinfo="_pe" class="_van-dialog {{p}}" confirmButtonText="授权" data-cid="{{_c||c}}" data-hid="{{26}}" id="getUserInfoDialog"></van-dialog>
+    </view>
+</template>
+<import src="../components/slots.wxml"></import>
+<import src="../components/coupon-list$3bead887.wxml"></import>
+<import src="../components/coupon-button$47a00e4a.wxml"></import>
+<import src="../components/coupon$9a23f778.wxml"></import>
+<import src="../components/index$6e50f885.wxml"></import>

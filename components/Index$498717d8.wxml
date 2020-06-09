@@ -1,0 +1,10 @@
+<template name="Index$498717d8">
+    <template is="pull-down-refresh$5ecd62e0" data="{{...$root[ cp+0+(_t||'') ],$root:$root,s_default:'default_11',_t:_t||'',p:p||''}}"></template>
+</template>
+<import src="../components/slots.wxml"></import>
+<import src="../components/Tips$0ee8fab0.wxml"></import>
+<import src="../components/pull-down-refresh$5ecd62e0.wxml"></import>
+<import src="../components/coupon-list$3bead887.wxml"></import>
+<import src="../components/coupon-button$47a00e4a.wxml"></import>
+<import src="../components/coupon$9a23f778.wxml"></import>
+<import src="../components/coupon-unavailable-footer$12b7e9e1.wxml"></import>

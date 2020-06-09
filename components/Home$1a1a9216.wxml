@@ -1,0 +1,231 @@
+<template name="Home$1a1a9216">
+    <view class="_div {{h[0].cl}} {{h[0].rcl}} {{p}}">
+        <view class="_div p-index {{p}}" wx:if="{{h[1]._if}}">
+            <view class="_div addMyProcedures {{p}}" wx:if="{{h[2]._if}}">
+                <view class="_p {{p}}">
+              "添加到我的小程序"  快速进入证件照拍照
+        <label bindtap="_pe" class="_span {{p}}" data-cid="{{_c||c}}" data-hid="{{5}}">×</label>
+                </view>
+                <view class="_div triangle {{p}}"></view>
+            </view>
+            <block wx:if="{{h[10]._if}}">
+                <van-notice-bar backgroundColor="#FF8630" class="_van-notice-bar {{p}}" color="#FFF" leftIcon="{{h[11].leftIcon}}" style="z-index:1" text="{{h[11].text}}" wx:if="{{h[11]._if}}"></van-notice-bar>
+            </block>
+            <view class="_div body {{p}}">
+                <view class="_div banner {{p}}" style="{{h[14].st}}">
+                    <view class="_div header-wrap {{p}}">
+                        <view class="_div search {{p}}">
+                            <view bindtap="_pe" class="_div label {{p}}" data-cid="{{_c||c}}" data-hid="{{17}}">
+                                <label class="_span {{p}}">{{h[19].t}}</label>
+                                <van-icon class="_van-icon label-icon {{p}}" name="play"></van-icon>
+                            </view>
+                            <view bindtap="_pe" class="_div input-wrap {{p}}" data-cid="{{_c||c}}" data-hid="{{23}}">
+                                <van-icon class="_van-icon {{p}}" color="#999" name="search"></van-icon>
+                                <input class="_input {{p}}" disabled="true" placeholder="请输入证件照名称"></input>
+                            </view>
+                        </view>
+                        <view bindtap="_pe" class="_view kefu {{p}}" data-cid="{{_c||c}}" data-hid="{{28}}" wx:if="{{h[28]._if}}">
+                            <image class="_image kf-icon {{p}}" mode="widthFix" src="../../static/icon/home/ic_kf.png"></image>
+                            <label class="_span {{p}}">客服</label>
+                        </view>
+                    </view>
+                    <swiper autoplay="true" circular="true" class="_swiper swiper {{p}}">
+                        <swiper-item class="_swiper-item {{p}}" wx:for="{{h[35].li}}" wx:for-item="banner" wx:key="index">
+                            <image bindtap="_pe" class="_image {{p}}" data-cid="{{_c||c}}" data-hid="{{36+'-'+(banner_i2!==undefined?banner_i2:index)}}" mode="widthFix" src="{{h[ 36+'-'+(banner_i2!==undefined?banner_i2:index) ].src}}"></image>
+                        </swiper-item>
+                    </swiper>
+                </view>
+                <van-row class="_van-row icon_list {{p}}" customClass="row_flex" wx:if="{{h[38]._if}}">
+                    <van-col bindtap="_pe" class="_van-col classify-list {{p}}" customClass="classify_flex" data-cid="{{_c||c}}" data-hid="{{39+'-'+(item_i2!==undefined?item_i2:index)}}" span="8" wx:for="{{h[39].li}}" wx:key="index">
+                        <image class="_image {{p}}" mode="widthFix" src="{{h[ 40+'-'+(item_i2!==undefined?item_i2:index) ].src}}"></image>
+                        <view class="_div {{p}}">{{h[ 43+'-'+(item_i2!==undefined?item_i2:index) ].t}}</view>
+                        <image class="_image pos {{p}}" mode="widthFix" src="{{h[ 45+'-'+(item_i2!==undefined?item_i2:index) ].src}}" wx:if="{{h[ 45+'-'+(item_i2!==undefined?item_i2:index) ]._if}}"></image>
+                    </van-col>
+                </van-row>
+                <view class="_div classification {{p}}" wx:if="{{h[47]._if}}">
+                    <view class="_div title {{p}}">证件照分类</view>
+                    <view class="_div list {{p}}">
+                        <view bindtap="_pe" class="_div item {{p}}" data-cid="{{_c||c}}" data-hid="{{52+'-'+(item_i2!==undefined?item_i2:index)}}" wx:for="{{h[52].li}}" wx:key="index">
+                            <view class="_div title {{p}}">
+                                <image class="_image {{p}}" src="{{h[ 54+'-'+(item_i2!==undefined?item_i2:index) ].src}}"></image>
+                                <text class="_text {{p}}">{{h[ 57+'-'+(item_i2!==undefined?item_i2:index) ].t}}</text>
+                            </view>
+                            <view class="_div info {{p}}">
+                                <text class="_text {{p}}">{{h[ 61+'-'+(item_i2!==undefined?item_i2:index) ].t}}</text>
+                                <image class="_image {{p}}" mode="widthFix" src="../../static/images/go_black.png"></image>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="_div seven-eleven {{p}}" wx:if="{{h[65]._if}}">
+                    <view class="_div {{p}}">
+                        <image class="_image {{p}}" mode="widthFix" src="../../static/7-11/ic_kf.png"></image>
+                        <label class="_span {{p}}">联系客服</label>
+                    </view>
+                    <view class="_p {{p}}">{{h[73].t}}</view>
+                    <view class="_div homeButton {{p}}">
+                        <button class="_button {{p}}" openType="contact" sessionFrom="{{h[76].sessionFrom}}">
+            在线客服
+          </button>
+                        <button bindtap="_pe" class="_button {{p}}" data-cid="{{_c||c}}" data-hid="{{79}}" wx:if="{{h[79]._if}}">
+            拨打电话
+          </button>
+                    </view>
+                </view>
+            </view>
+            <image bindtap="_pe" class="_image homeCustomer {{p}}" data-cid="{{_c||c}}" data-hid="{{82}}" src="{{h[82].src}}" width="mode"></image>
+            <template is="index$5962418e" data="{{...$root[ cp+0+(_t||'') ],$root:$root,_t:_t||'',p:p||''}}"></template>
+            <van-dialog class="_van-dialog {{p}}" id="van-dialog"></van-dialog>
+            <van-toast class="_van-toast {{p}}" id="toast"></van-toast>
+        </view>
+        <view class="_div custom-index {{p}}" wx:elif="{{h[90]._if}}">
+            <block wx:if="{{h[91]._if}}">
+                <van-notice-bar backgroundColor="#FF8630" class="_van-notice-bar {{p}}" color="#FFF" leftIcon="{{h[92].leftIcon}}" style="z-index:1" text="{{h[92].text}}" wx:if="{{h[92]._if}}"></van-notice-bar>
+            </block>
+            <view class="_div header {{p}}">
+                <view bindtap="_pe" class="_div area-select {{p}}" data-cid="{{_c||c}}" data-hid="{{95}}">
+                    <image class="_image location {{p}}" src="../../static/images/custom-index/icon-location.png"></image>
+                    <text class="_text {{p}}">{{h[99].t}}</text>
+                    <image class="_image arrow {{p}}" mode="widthFix" src="../../static/images/top_search.png"></image>
+                </view>
+                <view class="_div menu {{p}}">
+                    <view bindtap="_pe" class="_div customer-service {{p}}" data-cid="{{_c||c}}" data-hid="{{104}}">
+                        <image class="_image {{p}}" src="../../static/images/custom-index/icon-kefu.png"></image>
+                        <text class="_text {{p}}">客服</text>
+                    </view>
+                </view>
+            </view>
+            <view class="_div photo-list {{p}}">
+                <view bindtap="_pe" class="_div card {{p}}" data-cid="{{_c||c}}" data-hid="{{111}}">
+                    <image class="_image bg {{p}}" mode="widthFix" src="{{h[112].src}}"></image>
+                    <image class="_image label-bg {{p}}" mode="widthFix" src="{{h[114].src}}" wx:if="{{h[114]._if}}"></image>
+                    <view class="_div receipt {{p}}" wx:if="{{h[116]._if}}">
+                        <image class="_image {{p}}" mode="widthFix" src="../../static/images/custom-index/icon-receipt.png"></image>
+                        <text class="_text {{p}}">{{h[120].t}}</text>
+                    </view>
+                    <view class="_div card-body {{p}}">
+                        <view class="_div card-detail {{p}}">
+                            <view class="_div card-detail-name {{p}}">
+                                <image class="_image {{p}}" mode="widthFix" src="{{h[125].src}}"></image>
+                                <view class="_div {{p}}">
+                                    <view class="_div {{p}}">{{h[129].t}}</view>
+                                    <view class="_div card-detail-desc {{p}}">{{h[132].t}}</view>
+                                </view>
+                            </view>
+                            <view catch:tap="_pe" class="_div button {{p}}" data-cid="{{_c||c}}" data-hid="{{134}}" wx:if="{{h[134]._if}}">
+              去拍照
+            </view>
+                            <view class="_div {{h[136].cl}} {{p}}" wx:else>未开通</view>
+                        </view>
+                        <view class="_div card-footer {{p}}">
+                            <view class="_div {{p}}" wx:for="{{h[140].li}}" wx:key="index">
+                                <text class="_text {{p}}">{{h[ 142+'-'+(item_i2!==undefined?item_i2:index) ].t}}</text>
+                                <text class="_text {{p}}">{{h[ 145+'-'+(item_i2!==undefined?item_i2:index) ].t}}</text>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="_div swiper {{p}}">
+                    <swiper bindchange="_pe" class="_swiper {{p}}" data-cid="{{_c||c}}" data-hid="{{148}}" wx:if="{{h[148]._if}}">
+                        <swiper-item class="_swiper-item swiper-item {{p}}" wx:for="{{h[149].li}}" wx:for-index="parIndex" wx:for-item="parentItem" wx:key="parIndex">
+                            <view bindtap="_pe" class="_div {{p}}" data-cid="{{_c||c}}" data-hid="{{150+'-'+(parentItem_i2!==undefined?parentItem_i2:parIndex)+'-'+(item_i2!==undefined?item_i2:index)}}" wx:for="{{h[ 150+'-'+(parentItem_i2!==undefined?parentItem_i2:parIndex) ].li}}" wx:key="index">
+                                <image class="_image icon {{p}}" src="{{h[ 151+'-'+(parentItem_i2!==undefined?parentItem_i2:parIndex)+'-'+(item_i2!==undefined?item_i2:index) ].src}}"></image>
+                                <text class="_text {{p}}">{{h[ 154+'-'+(parentItem_i2!==undefined?parentItem_i2:parIndex)+'-'+(item_i2!==undefined?item_i2:index) ].t}}</text>
+                                <image class="_image pos {{p}}" mode="widthFix" src="{{h[ 156+'-'+(parentItem_i2!==undefined?parentItem_i2:parIndex)+'-'+(item_i2!==undefined?item_i2:index) ].src}}" wx:if="{{h[ 156+'-'+(parentItem_i2!==undefined?parentItem_i2:parIndex)+'-'+(item_i2!==undefined?item_i2:index) ]._if}}"></image>
+                            </view>
+                        </swiper-item>
+                    </swiper>
+                    <view class="_div dots {{p}}">
+                        <view class="_div {{h[ 159+'-'+(parentItem_i2!==undefined?parentItem_i2:index) ].cl}} {{p}}" wx:for="{{h[159].li}}" wx:for-item="parentItem" wx:key="index"></view>
+                    </view>
+                </view>
+            </view>
+            <view class="_div photo-record-wrap {{p}}" wx:if="{{h[161]._if}}">
+                <view class="_div photo-record-wrap-title {{p}}">
+                    <text class="_text {{p}}">拍照记录</text>
+                    <view bindtap="_pe" class="_div more {{p}}" data-cid="{{_c||c}}" data-hid="{{166}}">
+          更多
+          <image class="_image {{p}}" mode="widthFix" src="../../static/images/go_black.png"></image>
+                    </view>
+                </view>
+                <view class="_div photo-record-item-wrap {{p}}">
+                    <template is="index$343aa2cc" data="{{...$root[ cp+1+(_t||'') ],$root:$root,_t:_t||'',p:p||''}}"></template>
+                </view>
+            </view>
+            <view class="_div banner-wrap {{p}}" wx:if="{{h[174]._if}}">
+                <swiper bindchange="_pe" class="_swiper banner {{p}}" data-cid="{{_c||c}}" data-hid="{{175}}" style="{{h[175].st}}">
+                    <swiper-item class="_swiper-item {{p}}" wx:for="{{h[176].li}}" wx:key="index">
+                        <image bindload="_pe" bindtap="_pe" class="_image {{p}}" data-cid="{{_c||c}}" data-hid="{{177+'-'+(item_i2!==undefined?item_i2:index)}}" mode="widthFix" src="{{h[ 177+'-'+(item_i2!==undefined?item_i2:index) ].src}}"></image>
+                    </swiper-item>
+                </swiper>
+            </view>
+            <image bindtap="_pe" class="_image homeCustomer {{p}}" data-cid="{{_c||c}}" data-hid="{{179}}" src="{{h[179].src}}" width="mode"></image>
+            <view class="_div classification {{p}}">
+                <view class="_div title {{p}}">证件照分类</view>
+                <view class="_div list {{p}}">
+                    <view bindtap="_pe" class="_div item {{p}}" data-cid="{{_c||c}}" data-hid="{{186+'-'+(item_i2!==undefined?item_i2:index)}}" wx:for="{{h[186].li}}" wx:key="index">
+                        <view class="_div title {{p}}">
+                            <image class="_image {{p}}" src="{{h[ 188+'-'+(item_i2!==undefined?item_i2:index) ].src}}"></image>
+                            <text class="_text {{p}}">{{h[ 191+'-'+(item_i2!==undefined?item_i2:index) ].t}}</text>
+                        </view>
+                        <view class="_div info {{p}}">
+                            <text class="_text {{p}}">{{h[ 195+'-'+(item_i2!==undefined?item_i2:index) ].t}}</text>
+                            <image class="_image {{p}}" mode="widthFix" src="../../static/images/go_black.png"></image>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <template is="index$6e50f885" data="{{...$root[ cp+2+(_t||'') ],$root:$root,_t:_t||'',p:p||''}}"></template>
+        <template is="index$5962418e" data="{{...$root[ cp+3+(_t||'') ],$root:$root,_t:_t||'',p:p||''}}"></template>
+        <van-dialog class="_van-dialog {{p}}" id="van-dialog"></van-dialog>
+        <van-dialog bindconfirm="_pe" cancelButtonText="不同意" class="_van-dialog {{p}}" confirmButtonText="同意" data-cid="{{_c||c}}" data-hid="{{207}}" show="{{h[207].show}}" showCancelButton="true" title="用户服务协议与隐私政策" useSlot="true">
+            <view class="_view {{p}}" style="padding:30rpx">
+      您的信息仅用于为您提供服务，本产品会采用严格的数据安全措施保护你的个人隐私信息安全。
+      请充分阅读、理解并接受
+      <text bindtap="_pe" class="_text {{p}}" data-cid="{{_c||c}}" data-hid="{{210}}" style="color:#608dff">《用户服务协议》</text>和
+      <text bindtap="_pe" class="_text {{p}}" data-cid="{{_c||c}}" data-hid="{{213}}" style="color:#608dff">《隐私政策》</text>，完整协议内容请点击协议名称进行查看。
+    </view>
+        </van-dialog>
+        <van-dialog bindconfirm="_pe" class="_van-dialog {{p}}" confirmButtonText="切换" data-cid="{{_c||c}}" data-hid="{{217}}" message="请根据证件照使用地区选择城市，是否切换为当前城市？" show="{{h[217].show}}" showCancelButton="true" useTitleSlot="true">
+            <view class="_view relocation-title {{p}}" slot="title">
+      定位到您在
+      <text class="_text {{p}}">{{h[221].t}}</text>
+            </view>
+        </van-dialog>
+        <van-popup class="_van-popup {{p}}" customClass="doctor-active" show="{{h[223].show}}">
+            <view class="_view doctor-active-template-1 {{p}}" hidden="{{h[224].vs}}">
+                <image class="_image doctor-active-arrow {{p}}" lazyLoad="true" mode="widthFix" src="https://c01.parameters.cn/image/photoAppStatic/6hjM8rFn49e1lQREfUNXcGDtZvymdLV7.png"></image>
+                <view class="_view doctor-active-header {{p}}">
+                    <image class="_image doctor-active-pic {{p}}" lazyLoad="true" mode="widthFix" src="https://c01.parameters.cn/image/photoAppStatic/NgfAcDFVW8HMa3hbuoSI6OrsR497XGvL.png"></image>
+                    <image class="_image doctor-active-icon {{p}}" lazyLoad="true" mode="widthFix" src="https://c01.parameters.cn/image/photoAppStatic/nfsKSCHeOwcXLhgZup14Bzlv8artFmNE.png"></image>
+                    <text class="_text doctor-active-text {{p}}">点击“…”打开菜单，点击“添加到我的小程序”按钮</text>
+                </view>
+                <view class="_view doctor-active-footer {{p}}">
+                    <text class="_text doctor-active-title {{p}}">您已获得专属福利大礼包</text>
+                    <text class="_text doctor-active-subtitle {{p}}">下一步需要您收藏小程序，激活礼包</text>
+                </view>
+            </view>
+            <view class="_view doctor-active-template-2 {{p}}" hidden="{{h[242].vs}}">
+                <view class="_view doctor-active-header {{p}}">
+                    <image class="_image doctor-active-pic {{p}}" lazyLoad="true" mode="widthFix" src="https://c01.parameters.cn/image/photoAppStatic/iekC4WVMBgTKv6IPlR8x2HfaG1tApnbc.png"></image>
+                </view>
+                <view class="_view doctor-active-footer {{p}}">
+                    <text class="_text doctor-active-title {{p}}">专属礼包领取成功</text>
+                    <text class="_text doctor-active-subtitle {{p}}">赶紧去使用，在线拍好看的证件照吧~</text>
+                    <view class="_view doctor-active-button-wrap {{p}}">
+                        <van-button bindgetuserinfo="_pe" bindtap="_pe" class="_van-button {{p}}" customClass="doctor-active-button" data-cid="{{_c||c}}" data-hid="{{254}}" openType="getUserInfo" plain="true" type="primary">前往查看</van-button>
+                        <van-button bindtap="_pe" class="_van-button {{p}}" customClass="doctor-active-button" data-cid="{{_c||c}}" data-hid="{{257}}" type="primary">立即拍照</van-button>
+                    </view>
+                </view>
+            </view>
+        </van-popup>
+        <template is="config-dialog$101e25db" data="{{...$root[ cp+4+(_t||'') ],$root:$root,_t:_t||'',p:p||''}}"></template>
+        <van-dialog bindgetuserinfo="_pe" class="_van-dialog {{p}}" confirmButtonText="授权" data-cid="{{_c||c}}" data-hid="{{263}}" id="getUserInfoDialog"></van-dialog>
+    </view>
+</template>
+<import src="../components/slots.wxml"></import>
+<import src="../components/config-dialog$101e25db.wxml"></import>
+<import src="../components/index$5962418e.wxml"></import>
+<import src="../components/index$6e50f885.wxml"></import>
+<import src="../components/index$343aa2cc.wxml"></import>

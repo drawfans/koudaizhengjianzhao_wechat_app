@@ -1,0 +1,17 @@
+<template name="Index$00ae5872">
+    <view class="_div {{h[0].cl}} {{h[0].rcl}} {{p}}">
+        <view class="_div p-guide {{p}}">
+            <swiper autoplay="{{h[2].autoplay}}" circular="{{h[2].circular}}" class="_swiper swipe {{p}}" indicatorActiveColor="#fff" indicatorDots="true" interval="{{h[2].interval}}">
+                <swiper-item class="_swiper-item {{p}}" wx:for="{{h[3].li}}">
+                    <image class="_image {{p}}" mode="aspectFit" src="{{h[ 5+'-'+(item_i2!==undefined?item_i2:index) ].src}}"></image>
+                </swiper-item>
+            </swiper>
+            <view class="_div button-width {{p}}">
+                <button bindtap="_pe" class="_button return-color {{p}}" data-cid="{{_c||c}}" data-hid="{{8}}" size="large" type="primary">
+        返回
+      </button>
+            </view>
+        </view>
+    </view>
+</template>
+<import src="../components/slots.wxml"></import>

@@ -1,0 +1,19 @@
+<template name="img$36"></template>
+<template name="default$35"></template>
+<template name="image-preview$1259f4fe">
+    <view class="_div p-image-preview {{h[0].rcl}} {{p}}">
+        <view class="_div header {{p}}">
+            <template is="{{s_default||'default$35'}}" data="{{...$root[c],$root:$root,_t:_t||'',p:p||'',_c:c}}"></template>
+        </view>
+        <swiper autoplay="{{h[4].autoplay}}" bindchange="_pe" circular="true" class="_swiper van-swipe {{p}}" current="{{h[4].current}}" data-cid="{{_c||c}}" data-hid="{{4}}" indicatorActiveColor="#fff" indicatorDots="true" interval="3000">
+            <swiper-item class="_swiper-item {{p}}" wx:for="{{h[5].li}}" wx:for-item="img" wx:key="index">
+                <view class="_div image-wrap {{p}}">
+                    <template is="{{s_img||'img$36'}}" data="{{...$root[c],$root:$root,_t:(_t||'')+'-'+(img_i2!==undefined?img_i2:index),p:p||'',_c:c}}" wx:if="{{h[ 7+'-'+(img_i2!==undefined?img_i2:index) ]._if}}"></template>
+                    <image class="_image {{p}}" mode="aspectFit" src="{{h[ 8+'-'+(img_i2!==undefined?img_i2:index) ].src}}" wx:else></image>
+                </view>
+            </swiper-item>
+        </swiper>
+        <image bindtap="_pe" class="_image close {{p}}" data-cid="{{_c||c}}" data-hid="{{10}}" src="/static/images/icon-close.png"></image>
+    </view>
+</template>
+<import src="../components/slots.wxml"></import>

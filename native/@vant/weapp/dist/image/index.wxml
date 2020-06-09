@@ -1,0 +1,12 @@
+<view bind:tap="onClick" class="custom-class {{utils.bem( 'image',{round:round} )}}" style="{{viewStyle}}">
+    <image bind:error="onError" bind:load="onLoad" class="image-class van-image__img" lazyLoad="{{lazyLoad}}" mode="{{mode}}" showMenuByLongpress="{{showMenuByLongpress}}" src="{{src}}" wx:if="{{!error}}"></image>
+    <view class="loading-class van-image__loading" wx:if="{{loading&&showLoading}}">
+        <slot name="loading" wx:if="{{useLoadingSlot}}"></slot>
+        <van-icon name="photo-o" size="22" wx:else></van-icon>
+    </view>
+    <view class="error-class van-image__error" wx:if="{{error&&showError}}">
+        <slot name="error" wx:if="{{useErrorSlot}}"></slot>
+        <van-icon name="warning-o" size="22" wx:else></van-icon>
+    </view>
+</view>
+<wxs module="utils" src="../wxs/utils.wxs" />

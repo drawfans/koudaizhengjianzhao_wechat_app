@@ -1,0 +1,19 @@
+<template name="login-popup$1b08625c">
+    <view class="_div {{h[0].cl}} {{h[0].rcl}} {{p}}">
+        <view class="_div opacityPopup {{p}}">
+            <view class="_div login-popup {{p}}">
+                <view class="_p not-login {{p}}">您还未登录</view>
+                <view class="_p login {{p}}">请先登录再进行操作</view>
+                <view class="_div login-pic {{p}}">
+                    <image class="_image pic {{p}}" src="/static/images/pic_login.png" wx:if="{{h[10]._if}}"></image>
+                    <image class="_image pic {{p}}" src="/static/7-11/pic_login.png" wx:else></image>
+                </view>
+                <view class="_div flex-button {{p}}">
+                    <button bindtap="_pe" class="_button no-login {{p}}" data-cid="{{_c||c}}" data-hid="{{14}}">暂不登录</button>
+                    <button bindgetuserinfo="_pe" class="_button goto-login {{p}}" data-cid="{{_c||c}}" data-hid="{{17}}" openType="getUserInfo">立即登录</button>
+                </view>
+            </view>
+        </view>
+    </view>
+</template>
+<import src="../components/slots.wxml"></import>

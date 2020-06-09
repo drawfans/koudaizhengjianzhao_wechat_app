@@ -1,0 +1,6 @@
+<template name="index$38129107">
+    <view class="_i {{h[0].cl}} {{h[0].rcl}} {{p}}" style="{{h[0].st}}">
+        <image class="_img {{p}}" src="{{h[1].src}}" wx:if="{{h[1]._if}}"></image>
+    </view>
+</template>
+<import src="../components/slots.wxml"></import>

@@ -1,0 +1,7 @@
+function isObj(x) {
+    var type = typeof x;
+    return (x !== null && (type === 'object' || type === 'function'))
+};
+module.exports = (function(option, valueKey) {
+    return (isObj(option) && option[((nt_0 = (valueKey), null == nt_0 ? undefined : 'number' === typeof nt_0 ? nt_0 : "" + nt_0))] != null ? option[((nt_1 = (valueKey), null == nt_1 ? undefined : 'number' === typeof nt_1 ? nt_1 : "" + nt_1))] : option)
+});

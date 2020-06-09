@@ -1,0 +1,23 @@
+<template name="order-dialog$264b07ff">
+    <view class="_div YZdialog {{h[0].rcl}} {{p}}">
+        <view class="_div dialog {{p}}">
+            <view class="_p yztip {{p}}">温馨提示</view>
+            <view class="_div rich {{p}}">
+                <template is="octoParse" data="{{nodes:h[5].html}}"></template>
+            </view>
+            <image class="_image {{p}}" mode="widthFix" src="{{h[7].src}}"></image>
+            <view class="_div rich {{p}}">
+                <template is="octoParse" data="{{nodes:h[9].html}}"></template>
+            </view>
+            <view class="_div footer {{p}}">
+                <view bindtap="_pe" class="_div img {{p}}" data-cid="{{_c||c}}" data-hid="{{12}}">
+                    <image class="_image {{p}}" mode="widthFix" src="{{h[13].src}}"></image>
+                </view>我已阅读温馨提示内容
+    </view>
+        </view>
+        <view bindtap="_pe" class="_p sure {{p}}" data-cid="{{_c||c}}" data-hid="{{16}}">确定</view>
+        <view class="_p toast {{p}}" wx:if="{{h[19]._if}}">请勾选阅读确认</view>
+    </view>
+</template>
+<import src="../components/slots.wxml"></import>
+<import src="../htmlparse/index.wxml"></import>

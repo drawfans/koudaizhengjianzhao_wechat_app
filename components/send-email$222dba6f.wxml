@@ -1,0 +1,23 @@
+<template name="send-email$222dba6f">
+    <view catchtouchmove="preventTouchMove" class="_div send-email {{h[0].rcl}} {{p}}">
+        <van-dialog asyncClose="true" bindclose="_pe" bindinput="_pe" class="_van-dialog van-dialog {{p}}" data-cid="{{_c||c}}" data-hid="{{1}}" overlay="true" show="{{h[1].show}}" showCancelButton="true" title="相片电子档发送到您的邮箱" useSlot="true">
+            <view class="_div send-email-input {{p}}">
+                <view class="_view van-cell {{p}}">
+                    <input bindblur="_pe" bindfocus="_pe" bindinput="_pe" class="_input van-field input {{p}}" cursorSpacing="140px" data-cid="{{_c||c}}" data-hid="{{4}}" type="email" value="{{h[4].value}}"></input>
+                </view>
+                <scroll-view bindscroll="_pe" class="_scroll-view send-email-tip-list {{p}}" data-cid="{{_c||c}}" data-hid="{{6}}" hidden="{{h[6].vs}}" scrollY="{{h[6].scrollY}}">
+                    <view catch:tap="_pe" class="_li scroll {{p}}" data-cid="{{_c||c}}" data-hid="{{7+'-'+(tip_i2!==undefined?tip_i2:index)}}" wx:for="{{h[7].li}}" wx:for-item="tip" wx:key="index">{{h[ 8+'-'+(tip_i2!==undefined?tip_i2:index) ].t}}</view>
+                </scroll-view>
+            </view>
+            <label bindtap="_pe" class="_span close {{p}}" data-cid="{{_c||c}}" data-hid="{{10}}">
+                <image class="_image {{p}}" mode="widthFix" src="/static/images/btn_close.png"></image>
+            </label>
+        </van-dialog>
+        <template is="index$6e50f885" data="{{...$root[ cp+0+(_t||'') ],$root:$root,_t:_t||'',p:p||''}}"></template>
+        <van-dialog bindclose="_pe" class="_van-dialog {{p}}" data-cid="{{_c||c}}" data-hid="{{16}}" show="{{h[16].show}}" title="相片电子档发送到您的邮箱" useSlot="true">
+            <view class="_div message {{p}}">若没收到邮件，请前往邮件垃圾箱查看，或检查邮件是否输入有误</view>
+        </van-dialog>
+    </view>
+</template>
+<import src="../components/slots.wxml"></import>
+<import src="../components/index$6e50f885.wxml"></import>

@@ -1,0 +1,7 @@
+<template name="default$29"></template>
+<template name="Tips$0ee8fab0">
+    <view class="_div p-tips {{h[0].rcl}} {{p}}">
+        <template is="{{s_default||'default$29'}}" data="{{...$root[c],$root:$root,_t:_t||'',p:p||'',_c:c}}"></template>
+    </view>
+</template>
+<import src="../components/slots.wxml"></import>

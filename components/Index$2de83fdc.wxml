@@ -1,0 +1,72 @@
+<template name="Index$2de83fdc">
+    <view class="_div p-refund {{h[0].rcl}} {{p}}">
+        <block wx:if="{{h[1]._if}}">
+            <view class="_main {{p}}">
+                <view class="_section photo-info-wrap {{p}}">
+                    <view class="_h1 {{p}}">{{h[5].t}}</view>
+                    <view class="_div photo-info {{p}}">
+                        <view class="_div image-wrap {{p}}">
+                            <better-image class="_better-image photo-info-img {{p}}" mode="heightFix" src="{{h[9].src}}"></better-image>
+                        </view>
+                        <view class="_div image-wrap {{p}}">
+                            <better-image class="_better-image photo-info-template {{p}}" mode="widthFix" src="{{h[12].src}}"></better-image>
+                            <better-image class="_better-image photo-info-receipt {{p}}" mode="widthFix" src="{{h[14].src}}" wx:if="{{h[14]._if}}"></better-image>
+                        </view>
+                        <view class="_div photo-info-detail {{p}}">
+                            <view class="_h2 {{p}}">{{h[18].t}}</view>
+                            <view class="_var amount {{p}}">{{h[21].t}}</view>
+                            <view class="_var price {{p}}">{{h[24].t}}</view>
+                        </view>
+                    </view>
+                </view>
+                <view class="_section {{p}}">
+                    <van-cell bindtap="_pe" class="_van-cell {{p}}" data-cid="{{_c||c}}" data-hid="{{27}}" isLink="true" required="true" title="退款原因" value="{{h[27].value}}"></van-cell>
+                </view>
+                <view class="_section desc-wrap {{p}}">
+                    <view class="_div title {{p}}">问题描述</view>
+                    <van-field autosize="true" bindinput="_pe" class="_van-field {{p}}" data-cid="{{_c||c}}" data-hid="{{33}}" maxlength="200" placeholder="请填写具体的退款原因" type="textarea" value="{{h[33].value}}"></van-field>
+                    <view class="_var {{p}}">{{h[36].t}}</view>
+                </view>
+            </view>
+            <view class="_footer {{p}}">
+                <view class="_div refund-button-list {{p}}">
+                    <van-button bindtap="_pe" class="_van-button van-button {{p}}" data-cid="{{_c||c}}" data-hid="{{40}}" size="large" type="primary" vBind="submitButton">确认提交
+                </van-button>
+                </view>
+            </view>
+            <van-popup bindclose="_pe" class="_van-popup {{p}}" data-cid="{{_c||c}}" data-hid="{{43}}" position="bottom" show="{{h[43].show}}">
+                <view class="_div refund-reason-popup {{p}}">
+                    <view class="_p title {{p}}">请选择退款原因</view>
+                    <van-radio-group class="_van-radio-group {{p}}" value="{{h[48].value}}">
+                        <van-cell-group class="_van-cell-group {{p}}">
+                            <van-cell bindtap="_pe" class="_van-cell {{p}}" clickable="true" data-cid="{{_c||c}}" data-hid="{{50+'-'+(item_i2!==undefined?item_i2:index)}}" title="{{h[ 50+'-'+(item_i2!==undefined?item_i2:index) ].title}}" wx:for="{{h[50].li}}" wx:key="index">
+                                <van-radio class="_van-radio {{p}}" name="{{h[ 51+'-'+(item_i2!==undefined?item_i2:index) ].name}}" slot="right-icon"></van-radio>
+                            </van-cell>
+                        </van-cell-group>
+                    </van-radio-group>
+                    <view class="_div button-wrap {{p}}">
+                        <van-button bindtap="_pe" class="_van-button van-button {{p}}" data-cid="{{_c||c}}" data-hid="{{54}}" size="large" type="primary">确认
+                    </van-button>
+                    </view>
+                </view>
+            </van-popup>
+        </block>
+        <view class="_div refund-submit-success {{p}}" wx:else>
+            <view class="_main {{p}}">
+                <view class="_div pic {{p}}">
+                    <image class="_image {{p}}" mode="widthFix" src="../../../static/images/refund/pic_submit.png"></image>
+                </view>
+                <view class="_h1 title {{p}}">退款申请提交成功</view>
+                <view class="_div sub-title {{p}}">{{h[65].t}}</view>
+            </view>
+            <view class="_footer {{p}}">
+                <view class="_div refund-button-list {{p}}">
+                    <van-button bindtap="_pe" class="_van-button van-button {{p}}" data-cid="{{_c||c}}" data-hid="{{69}}" plain="true" size="large" type="primary">回到首页
+                </van-button>
+                    <van-button bindtap="_pe" class="_van-button van-button {{p}}" data-cid="{{_c||c}}" data-hid="{{72}}" size="large" type="primary">查看订单</van-button>
+                </view>
+            </view>
+        </view>
+    </view>
+</template>
+<import src="../components/slots.wxml"></import>

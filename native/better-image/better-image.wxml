@@ -1,0 +1,1 @@
+<image binderror="handleOnError" bindload="handleOnLoad" class="better-image {{customClassName}}" lazyLoad="{{lazyLoad}}" mode="{{currentMode}}" showMenuByLongpress="{{showMenuByLongpress}}" src="{{src}}" style="{{computedStyles}} {{customStyle}}"></image>

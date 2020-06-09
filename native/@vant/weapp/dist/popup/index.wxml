@@ -1,0 +1,6 @@
+<van-overlay bind:click="onClickOverlay" customStyle="{{overlayStyle}}" duration="{{duration}}" show="{{show}}" zIndex="{{zIndex}}" wx:if="{{overlay}}"></van-overlay>
+<view bind:transitionend="onTransitionEnd" class="custom-class {{classes}} {{utils.bem( 'popup',[ position,{round:round,safe:safeAreaInsetBottom,safeTop:safeAreaInsetTop} ] )}}" style="z-index: {{zIndex}}; -webkit-transition-duration:{{currentDuration}}ms; transition-duration:{{currentDuration}}ms; {{display?'':'display: none;'}};{{customStyle}}" wx:if="{{inited}}">
+    <slot></slot>
+    <van-icon bind:tap="onClickCloseIcon" class="van-popup__close-icon van-popup__close-icon--{{closeIconPosition}}" name="{{closeIcon}}" wx:if="{{closeable}}"></van-icon>
+</view>
+<wxs module="utils" src="../wxs/utils.wxs" />

@@ -1,0 +1,1212 @@
+@import "../../../htmlparse/index.wxss";
+
+@font-face {
+    font-style:normal;font-weight:normal;font-family:'vant-icon';src:url("https://img.yzcdn.cn/vant/vant-icon-ccd101.ttf") format("truetype");
+}
+
+.van-icon {
+    position: relative;
+    display: inline-block;
+    font: normal normal normal 28rpx/1 "vant-icon";
+    font-size: inherit;
+    text-rendering: auto;
+}
+
+.van-icon--image {
+    width: 1em;
+    height: 1em;
+}
+
+.van-icon--image ._img {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+}
+
+.van-icon--image img {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+}
+
+.van-icon::before {
+    display: inline-block;
+}
+
+.van-icon-add-o::before {
+    content: "\F000";
+}
+
+.van-icon-add::before {
+    content: "\F001";
+}
+
+.van-icon-add2::before {
+    content: "\F002";
+}
+
+.van-icon-after-sale::before {
+    content: "\F003";
+}
+
+.van-icon-aim::before {
+    content: "\F004";
+}
+
+.van-icon-alipay::before {
+    content: "\F005";
+}
+
+.van-icon-arrow-down::before {
+    content: "\F006";
+}
+
+.van-icon-arrow-left::before {
+    content: "\F007";
+}
+
+.van-icon-arrow-up::before {
+    content: "\F008";
+}
+
+.van-icon-arrow::before {
+    content: "\F009";
+}
+
+.van-icon-balance-pay::before {
+    content: "\F00A";
+}
+
+.van-icon-browsing-history::before {
+    content: "\F00B";
+}
+
+.van-icon-card::before {
+    content: "\F00C";
+}
+
+.van-icon-cart-o::before {
+    content: "\F00D";
+}
+
+.van-icon-cart::before {
+    content: "\F00E";
+}
+
+.van-icon-cash-back-record::before {
+    content: "\F00F";
+}
+
+.van-icon-cash-on-deliver::before {
+    content: "\F010";
+}
+
+.van-icon-certificate::before {
+    content: "\F011";
+}
+
+.van-icon-chat::before {
+    content: "\F012";
+}
+
+.van-icon-check::before {
+    content: "\F013";
+}
+
+.van-icon-checked::before {
+    content: "\F014";
+}
+
+.van-icon-clear::before {
+    content: "\F015";
+}
+
+.van-icon-clock::before {
+    content: "\F016";
+}
+
+.van-icon-close::before {
+    content: "\F017";
+}
+
+.van-icon-completed::before {
+    content: "\F018";
+}
+
+.van-icon-contact::before {
+    content: "\F019";
+}
+
+.van-icon-coupon::before {
+    content: "\F01A";
+}
+
+.van-icon-credit-pay::before {
+    content: "\F01B";
+}
+
+.van-icon-cross::before {
+    content: "\F01C";
+}
+
+.van-icon-debit-pay::before {
+    content: "\F01D";
+}
+
+.van-icon-delete::before {
+    content: "\F01E";
+}
+
+.van-icon-description::before {
+    content: "\F01F";
+}
+
+.van-icon-discount::before {
+    content: "\F020";
+}
+
+.van-icon-ecard-pay::before {
+    content: "\F021";
+}
+
+.van-icon-edit-data::before {
+    content: "\F022";
+}
+
+.van-icon-edit::before {
+    content: "\F023";
+}
+
+.van-icon-exchange-record::before {
+    content: "\F024";
+}
+
+.van-icon-exchange::before {
+    content: "\F025";
+}
+
+.van-icon-fail::before {
+    content: "\F026";
+}
+
+.van-icon-free-postage::before {
+    content: "\F027";
+}
+
+.van-icon-gift-card-pay::before {
+    content: "\F028";
+}
+
+.van-icon-gift-card::before {
+    content: "\F029";
+}
+
+.van-icon-gift::before {
+    content: "\F02A";
+}
+
+.van-icon-gold-coin::before {
+    content: "\F02B";
+}
+
+.van-icon-goods-collect::before {
+    content: "\F02C";
+}
+
+.van-icon-home::before {
+    content: "\F02D";
+}
+
+.van-icon-hot-sale::before {
+    content: "\F02E";
+}
+
+.van-icon-hot::before {
+    content: "\F02F";
+}
+
+.van-icon-idcard::before {
+    content: "\F030";
+}
+
+.van-icon-info-o::before {
+    content: "\F031";
+}
+
+.van-icon-like-o::before {
+    content: "\F032";
+}
+
+.van-icon-like::before {
+    content: "\F033";
+}
+
+.van-icon-location::before {
+    content: "\F034";
+}
+
+.van-icon-logistics::before {
+    content: "\F035";
+}
+
+.van-icon-more-o::before {
+    content: "\F036";
+}
+
+.van-icon-more::before {
+    content: "\F037";
+}
+
+.van-icon-new-arrival::before {
+    content: "\F038";
+}
+
+.van-icon-new::before {
+    content: "\F039";
+}
+
+.van-icon-other-pay::before {
+    content: "\F03A";
+}
+
+.van-icon-passed::before {
+    content: "\F03B";
+}
+
+.van-icon-password-not-view::before {
+    content: "\F03C";
+}
+
+.van-icon-password-view::before {
+    content: "\F03D";
+}
+
+.van-icon-pause::before {
+    content: "\F03E";
+}
+
+.van-icon-peer-pay::before {
+    content: "\F03F";
+}
+
+.van-icon-pending-deliver::before {
+    content: "\F040";
+}
+
+.van-icon-pending-evaluate::before {
+    content: "\F041";
+}
+
+.van-icon-pending-orders::before {
+    content: "\F042";
+}
+
+.van-icon-pending-payment::before {
+    content: "\F043";
+}
+
+.van-icon-phone::before {
+    content: "\F044";
+}
+
+.van-icon-photo::before {
+    content: "\F045";
+}
+
+.van-icon-photograph::before {
+    content: "\F046";
+}
+
+.van-icon-play::before {
+    content: "\F047";
+}
+
+.van-icon-point-gift::before {
+    content: "\F048";
+}
+
+.van-icon-points-mall::before {
+    content: "\F049";
+}
+
+.van-icon-points::before {
+    content: "\F04A";
+}
+
+.van-icon-qr-invalid::before {
+    content: "\F04B";
+}
+
+.van-icon-qr::before {
+    content: "\F04C";
+}
+
+.van-icon-question::before {
+    content: "\F04D";
+}
+
+.van-icon-question2::before {
+    content: "\F04E";
+}
+
+.van-icon-receive-gift::before {
+    content: "\F04F";
+}
+
+.van-icon-records::before {
+    content: "\F050";
+}
+
+.van-icon-search::before {
+    content: "\F051";
+}
+
+.van-icon-send-gift::before {
+    content: "\F052";
+}
+
+.van-icon-setting::before {
+    content: "\F053";
+}
+
+.van-icon-share::before {
+    content: "\F054";
+}
+
+.van-icon-shop-collect::before {
+    content: "\F055";
+}
+
+.van-icon-shop::before {
+    content: "\F056";
+}
+
+.van-icon-shopping-cart::before {
+    content: "\F057";
+}
+
+.van-icon-sign::before {
+    content: "\F058";
+}
+
+.van-icon-star-o::before {
+    content: "\F059";
+}
+
+.van-icon-star::before {
+    content: "\F05A";
+}
+
+.van-icon-stop::before {
+    content: "\F05B";
+}
+
+.van-icon-success::before {
+    content: "\F05C";
+}
+
+.van-icon-tosend::before {
+    content: "\F05D";
+}
+
+.van-icon-underway::before {
+    content: "\F05E";
+}
+
+.van-icon-upgrade::before {
+    content: "\F05F";
+}
+
+.van-icon-value-card::before {
+    content: "\F060";
+}
+
+.van-icon-wap-home::before {
+    content: "\F061";
+}
+
+.van-icon-wap-nav::before {
+    content: "\F062";
+}
+
+.van-icon-warn::before {
+    content: "\F063";
+}
+
+.van-icon-wechat::before {
+    content: "\F064";
+}
+
+.van-loading {
+    width: 60rpx;
+    height: 60rpx;
+    z-index: 0;
+    font-size: 0;
+    line-height: 0;
+    position: relative;
+    vertical-align: middle;
+}
+
+.van-loading--circle {
+    width: 32rpx;
+    height: 32rpx;
+}
+
+.van-loading__spinner {
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: van-rotate 0.8s linear infinite;
+}
+
+.van-loading__spinner--circle {
+    border-radius: 100%;
+    border: 6rpx solid transparent;
+    border-color: #c8c9cc;
+    border-top-color: #7d7e80;
+}
+
+.van-loading__spinner--gradient-circle {
+    background-size: contain;
+    background-image: url('https://img.yzcdn.cn/vant/gradient-circle-black.png');
+}
+
+.van-loading__spinner--spinner {
+    animation-timing-function: steps(12);
+}
+
+.van-loading__spinner--spinner ._i {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.van-loading__spinner--spinner i {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.van-loading__spinner--spinner ._i::before {
+    width: 4rpx;
+    height: 25%;
+    content: ' ';
+    display: block;
+    margin: 0 auto;
+    border-radius: 40%;
+    background-color: currentColor;
+}
+
+.van-loading__spinner--spinner i::before {
+    width: 4rpx;
+    height: 25%;
+    content: ' ';
+    display: block;
+    margin: 0 auto;
+    border-radius: 40%;
+    background-color: currentColor;
+}
+
+.van-loading__spinner--circular {
+    animation-duration: 2s;
+}
+
+.van-loading__circular {
+    width: 100%;
+    height: 100%;
+}
+
+.van-loading__circular ._circle {
+    stroke: currentColor;
+    stroke-width: 3;
+    stroke-linecap: round;
+    animation: van-circular 1.5s ease-in-out infinite;
+}
+
+.van-loading__circular circle {
+    stroke: currentColor;
+    stroke-width: 3;
+    stroke-linecap: round;
+    animation: van-circular 1.5s ease-in-out infinite;
+}
+
+.van-loading--white .van-loading__spinner--circle {
+    border-color: rgba(0,0,0,0.1);
+    border-top-color: rgba(255,255,255,0.7);
+}
+
+.van-loading--white .van-loading__spinner--gradient-circle {
+    background-image: url('https://img.yzcdn.cn/vant/gradient-circle-white.png');
+}
+
+@-webkit-keyframes van-circular {
+    0% {
+        stroke-dasharray: 1,200;
+        stroke-dashoffset: 0;
+    }
+
+    50% {
+        stroke-dasharray: 90,150;
+        stroke-dashoffset: -40;
+    }
+
+    100% {
+        stroke-dasharray: 90,150;
+        stroke-dashoffset: -120;
+    }
+}
+
+@keyframes van-circular {
+    0% {
+        stroke-dasharray: 1,200;
+        stroke-dashoffset: 0;
+    }
+
+    50% {
+        stroke-dasharray: 90,150;
+        stroke-dashoffset: -40;
+    }
+
+    100% {
+        stroke-dasharray: 90,150;
+        stroke-dashoffset: -120;
+    }
+}
+
+.van-loading__spinner--spinner ._i:nth-of-type(1) {
+    opacity: 1;
+    transform: rotate(30deg);
+}
+
+.van-loading__spinner--spinner i:nth-of-type(1) {
+    opacity: 1;
+    transform: rotate(30deg);
+}
+
+.van-loading__spinner--spinner ._i:nth-of-type(2) {
+    opacity: 0.9375;
+    transform: rotate(60deg);
+}
+
+.van-loading__spinner--spinner i:nth-of-type(2) {
+    opacity: 0.9375;
+    transform: rotate(60deg);
+}
+
+.van-loading__spinner--spinner ._i:nth-of-type(3) {
+    opacity: 0.875;
+    transform: rotate(90deg);
+}
+
+.van-loading__spinner--spinner i:nth-of-type(3) {
+    opacity: 0.875;
+    transform: rotate(90deg);
+}
+
+.van-loading__spinner--spinner ._i:nth-of-type(4) {
+    opacity: 0.8125;
+    transform: rotate(120deg);
+}
+
+.van-loading__spinner--spinner i:nth-of-type(4) {
+    opacity: 0.8125;
+    transform: rotate(120deg);
+}
+
+.van-loading__spinner--spinner ._i:nth-of-type(5) {
+    opacity: 0.75;
+    transform: rotate(150deg);
+}
+
+.van-loading__spinner--spinner i:nth-of-type(5) {
+    opacity: 0.75;
+    transform: rotate(150deg);
+}
+
+.van-loading__spinner--spinner ._i:nth-of-type(6) {
+    opacity: 0.6875;
+    transform: rotate(180deg);
+}
+
+.van-loading__spinner--spinner i:nth-of-type(6) {
+    opacity: 0.6875;
+    transform: rotate(180deg);
+}
+
+.van-loading__spinner--spinner ._i:nth-of-type(7) {
+    opacity: 0.625;
+    transform: rotate(210deg);
+}
+
+.van-loading__spinner--spinner i:nth-of-type(7) {
+    opacity: 0.625;
+    transform: rotate(210deg);
+}
+
+.van-loading__spinner--spinner ._i:nth-of-type(8) {
+    opacity: 0.5625;
+    transform: rotate(240deg);
+}
+
+.van-loading__spinner--spinner i:nth-of-type(8) {
+    opacity: 0.5625;
+    transform: rotate(240deg);
+}
+
+.van-loading__spinner--spinner ._i:nth-of-type(9) {
+    opacity: 0.5;
+    transform: rotate(270deg);
+}
+
+.van-loading__spinner--spinner i:nth-of-type(9) {
+    opacity: 0.5;
+    transform: rotate(270deg);
+}
+
+.van-loading__spinner--spinner ._i:nth-of-type(10) {
+    opacity: 0.4375;
+    transform: rotate(300deg);
+}
+
+.van-loading__spinner--spinner i:nth-of-type(10) {
+    opacity: 0.4375;
+    transform: rotate(300deg);
+}
+
+.van-loading__spinner--spinner ._i:nth-of-type(11) {
+    opacity: 0.375;
+    transform: rotate(330deg);
+}
+
+.van-loading__spinner--spinner i:nth-of-type(11) {
+    opacity: 0.375;
+    transform: rotate(330deg);
+}
+
+.van-loading__spinner--spinner ._i:nth-of-type(12) {
+    opacity: 0.3125;
+    transform: rotate(360deg);
+}
+
+.van-loading__spinner--spinner i:nth-of-type(12) {
+    opacity: 0.3125;
+    transform: rotate(360deg);
+}
+
+.van-loading__spinner--circular {
+    border: 2rpx solid;
+    border-radius: 100%;
+    border-color: transparent;
+    border-top-color: currentColor;
+    animation-duration: 0.8s;
+}
+
+@-webkit-keyframes van-rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+@keyframes van-rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+.par-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    animation: par-animate-fade-enter 500ms;
+    z-index: 99;
+}
+
+@-webkit-keyframes par-animate-fade-enter {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes par-animate-fade-enter {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.van-toast {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    color: #fff;
+    max-width: 70%;
+    font-size: 28rpx;
+    line-height: 40rpx;
+    border-radius: 8rpx;
+    word-break: break-all;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: content-box;
+    transform: translate3d(-50%,-50%,0);
+    background-color: rgba(50,50,51,0.88);
+    width: fit-content;
+    white-space: pre-wrap;
+}
+
+.van-toast--unclickable ._view,.van-toast--unclickable ._text {
+    pointer-events: none;
+}
+
+.van-toast--unclickable view,.van-toast--unclickable text {
+    pointer-events: none;
+}
+
+.van-toast--text {
+    padding: 16rpx 24rpx;
+    min-width: 192rpx;
+}
+
+.van-toast--default {
+    width: 180rpx;
+    padding: 30rpx;
+    min-height: 180rpx;
+}
+
+.van-toast--default .van-toast__icon {
+    font-size: 96rpx;
+}
+
+.van-toast--default .van-loading {
+    margin: 20rpx 0;
+}
+
+.van-toast--default .van-toast__text {
+    padding-top: 10rpx;
+}
+
+.van-toast--top {
+    top: 100rpx;
+}
+
+.van-toast--bottom {
+    top: auto;
+    bottom: 100rpx;
+}
+
+.coupon-button {
+    font-size: 22rpx;
+    color: #fff;
+    background: #4293F4;
+    border-radius: 34rpx;
+    padding: 2rpx 12rpx;
+    line-height: 30rpx;
+    outline: none;
+    border: none;
+    align-self: flex-end;
+    display: flex;
+}
+
+.c-coupon-status-used .c-coupon-body .c-coupon-var-wrap .c-coupon-var-inner,.c-coupon-status-expired .c-coupon-body .c-coupon-var-wrap .c-coupon-var-inner {
+    color: #000;
+}
+
+.c-coupon .c-coupon-body {
+    position: relative;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 8rpx 16rpx 0 rgba(0,0,0,0.02);
+    overflow: hidden;
+    height: 210rpx;
+    border-radius: 4rpx;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.c-coupon .c-coupon-body .c-coupon-label {
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    top: -56rpx;
+    left: -56rpx;
+    transform: rotate(-45deg);
+    color: #fff;
+    background-color: #ff6c6c;
+    width: 112rpx;
+    height: 112rpx;
+    font-size: 18rpx;
+    padding-bottom: 6rpx;
+    box-sizing: border-box;
+}
+
+.c-coupon .c-coupon-body .c-coupon-label ._span {
+    position: relative;
+    z-index: 10;
+}
+
+.c-coupon .c-coupon-body .c-coupon-label span {
+    position: relative;
+    z-index: 10;
+}
+
+.c-coupon .c-coupon-body .c-coupon-stamp {
+    position: absolute;
+    top: -35rpx;
+    right: -24rpx;
+    width: 140rpx;
+    height: 140rpx;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transform: rotate(-35deg);
+}
+
+.c-coupon .c-coupon-body .c-coupon-var-wrap {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 60rpx;
+    color: #FF4A01;
+    text-align: center;
+    flex: 0 0 210rpx;
+    height: 100%;
+}
+
+.c-coupon .c-coupon-body .c-coupon-var-wrap .unit {
+    font-size: 30rpx;
+}
+
+.c-coupon .c-coupon-body .c-coupon-var-wrap::before {
+    position: absolute;
+    content: '';
+    height: 150rpx;
+    right: 0;
+    border-right: 2rpx dashed #d8d8d8;
+}
+
+.c-coupon .c-coupon-body .c-coupon-var-wrap .c-coupon-var-inner {
+    display: flex;
+    align-items: baseline;
+}
+
+.c-coupon .c-coupon-body .c-coupon-var-wrap .reversa {
+    flex-flow: row-reverse;
+}
+
+.c-coupon .c-coupon-body .c-coupon-var-wrap .c-coupon-var-tips {
+    position: relative;
+    top: 6rpx;
+    font-size: 24rpx;
+    color: #999;
+}
+
+.c-coupon .c-coupon-body .c-coupon-body-right {
+    position: relative;
+    flex: 1;
+    padding: 30rpx;
+    display: flex;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.c-coupon .c-coupon-body .c-coupon-body-right::before {
+    position: absolute;
+    content: '';
+    background: #f7f7f7;
+    border-radius: 50%;
+    width: 28rpx;
+    height: 28rpx;
+    left: -14rpx;
+    top: -14rpx;
+}
+
+.c-coupon .c-coupon-body .c-coupon-body-right::after {
+    position: absolute;
+    content: '';
+    background: #f7f7f7;
+    border-radius: 50%;
+    width: 28rpx;
+    height: 28rpx;
+    left: -14rpx;
+    bottom: -14rpx;
+}
+
+.c-coupon .c-coupon-body .c-coupon-body-right .c-coupon-info-wrap {
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+}
+
+.c-coupon .c-coupon-body .c-coupon-body-right .c-coupon-info-wrap .c-coupon-info-type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8rpx 20rpx;
+    background: rgba(90,90,90,0.08);
+    border-radius: 44rpx;
+    font-size: 20rpx;
+    font-weight: 600;
+    height: 44rpx;
+    box-sizing: border-box;
+}
+
+.c-coupon .c-coupon-body .c-coupon-body-right .c-coupon-info-wrap .c-coupon-info-name {
+    margin-top: 10rpx;
+    font-size: 36rpx;
+    line-height: 50rpx;
+    font-weight: 700;
+}
+
+.c-coupon .c-coupon-body .c-coupon-body-right .c-coupon-info-wrap .c-coupon-info-desc {
+    margin-top: 15rpx;
+    font-size: 22rpx;
+    color: #666;
+    line-height: 30rpx;
+}
+
+.c-coupon .c-coupon-body .c-coupon-body-right .c-coupon-select-wrap {
+    flex: 0 0;
+}
+
+.c-coupon .c-coupon-body .c-coupon-body-right .c-coupon-select-wrap ._img {
+    width: 38rpx;
+}
+
+.c-coupon .c-coupon-body .c-coupon-body-right .c-coupon-select-wrap img {
+    width: 38rpx;
+}
+
+.c-coupon .c-coupon-footer {
+    position: relative;
+    margin-top: -40rpx;
+    padding-top: 40rpx;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.c-coupon-list {
+    padding: 30rpx;
+    background-color: #f7f7f7;
+}
+
+.c-coupon-list .c-coupon+.c-coupon {
+    margin-top: 20rpx;
+}
+
+.config-dialog-popup {
+    overflow-y: visible;
+}
+
+.close-icon {
+    position: absolute;
+    bottom: calc(100% + 42rpx);
+    right: 0;
+    width: 48rpx;
+}
+
+.dialog-default {
+    padding: 25rpx;
+}
+
+.dialog-default .dialog-title {
+    text-align: center;
+    font-size: 32rpx;
+    font-weight: 500;
+    line-height: 45rpx;
+    margin-bottom: 20rpx;
+}
+
+.dialog-default .dialog-content {
+    margin: 20rpx 0 0;
+}
+
+.dialog-default .dialog-footer {
+    margin-top: 25rpx;
+    display: flex;
+    align-items: center;
+}
+
+.dialog-default .dialog-button {
+    flex: 1;
+}
+
+.dialog-default .dialog-button+.dialog-button {
+    margin: 0 0 0 20rpx;
+}
+
+.dialog-full {
+    width: 80vw;
+}
+
+.dialog-img {
+    width: 100%;
+}
+
+.order-detail-status-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34rpx;
+}
+
+.order-detail-status-title .order-detail-status-title-icon {
+    width: 44rpx;
+    margin-right: 22rpx;
+}
+
+.order-detail-status-text {
+    margin-top: 20rpx;
+    font-size: 24rpx;
+    max-width: 640rpx;
+    line-height: 1.5;
+}
+
+.order-detail-status-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 36rpx;
+    padding: 0 70rpx;
+}
+
+.pay-result {
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+    padding-bottom: 190rpx;
+    box-sizing: border-box;
+}
+
+.pay-result .loading-mode {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    font-size: 34rpx;
+    color: #040404;
+    font-weight: 600;
+}
+
+.pay-result .loading-mode ._image {
+    margin: 90rpx 0 30rpx;
+    width: 80rpx;
+    animation: rotate 800ms ease-in-out infinite;
+}
+
+.pay-result .loading-mode image {
+    margin: 90rpx 0 30rpx;
+    width: 80rpx;
+    animation: rotate 800ms ease-in-out infinite;
+}
+
+.pay-result .get-coupon-wrap {
+    margin: 50rpx 0 0;
+    text-align: center;
+    font-size: 28rpx;
+    font-weight: 600;
+}
+
+.pay-result .get-coupon-wrap .get-coupon-container {
+    margin-top: 20rpx;
+}
+
+.share-content-wrap {
+    text-align: center;
+    background: #fff;
+    padding: 40rpx 35rpx 50rpx;
+}
+
+.share-content-wrap .title {
+    margin: 40rpx 0 10rpx;
+    font-size: 36rpx;
+    font-weight: 500;
+    line-height: 50rpx;
+}
+
+.share-content-wrap .message {
+    font-size: 26rpx;
+    font-weight: 400;
+    color: #888;
+    line-height: 37rpx;
+}
+
+.share-content-wrap .button-wrap {
+    margin: 54rpx 0 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.share-content-wrap .button {
+    width: 210rpx;
+    height: 70rpx;
+    line-height: 70rpx;
+    border-radius: 4rpx;
+}
+
+.share-wrap {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+}
+
+.share-mask-content {
+    position: absolute;
+    right: 50rpx;
+    top: 90rpx;
+}
+
+.share-mask-arrow {
+    position: absolute;
+    top: 20rpx;
+    right: 120rpx;
+    width: 80rpx;
+}
+
+.share-confirm-button {
+    position: absolute!important;
+    right: 136rpx;
+    top: 216rpx;
+}

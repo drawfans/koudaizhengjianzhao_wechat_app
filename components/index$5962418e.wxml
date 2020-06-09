@@ -1,0 +1,8 @@
+<template name="index$5962418e">
+    <view class="_div {{h[0].rcl}} {{p}}">
+        <template is="index$87d718e6" data="{{...$root[ cp+0+(_t||'') ],$root:$root,s_default:'default_52',_t:_t||'',p:p||''}}"></template>
+    </view>
+</template>
+<import src="../components/slots.wxml"></import>
+<import src="../components/index$3189f902.wxml"></import>
+<import src="../components/index$87d718e6.wxml"></import>
